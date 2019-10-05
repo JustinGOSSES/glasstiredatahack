@@ -69,3 +69,24 @@
 				- Do doctors get associated mostly with art museums?
 				- Which science career should you follow if you want to be surrounded by art venues? 
 
+## What to build?
+- Tableau StoryBoard?
+- KeplerGL Maps and map layers
+- Tensorboard visualization to find similiar items...
+
+## What other data?
+- Science jobs... but not interactive linked except if using something like geopandas
+- Can I combine Tableau & KeplerGL? in a webpage?
+- What census data to bring in? Based on zipcode? 
+	- number of events vs. race % 
+	- number of events vs. 
+- 
+
+
+## Things to maximize:
+- Provides Insight!
+- Easy for general audience
+- Provides Glastire with insight
+- Can be on their site?
+
+
