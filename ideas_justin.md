@@ -2,6 +2,16 @@
 
 # Data Ideas
 
+## What we have:
+- venue names
+- venue websites sometimes
+- venue locations
+- event artist IDs
+
+## What we don't have:
+- artist names
+- art types
+
 ## Cleaning tasks
 - finding actual names
 - combine into one sheet
