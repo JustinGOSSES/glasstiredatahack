@@ -92,17 +92,31 @@ Three pages:
 - Story
 	- What is the distribution! 
 		- Science vs. Art
-		- What is the categorization?
+		- 	What is the categorization?
 			- What are mapped areas
 				- Types of art go here & types of science go here
-			- event frequency for each venue as timeline
-			- artist total appearances
-			- new artists with multiple appearances 
-			- lost artists with multiple appearances
-			- total number of events at venue
+		- event frequency for each venue as timeline
+		- artist total appearances
+		- new artists with multiple appearances 
+		- lost artists with multiple appearances
+		- total number of events at venue
 	- 
 - Exploration with Kepler
 - Exploration with Tableau
 - Exploration with Tensorboard
 
+
+Kepler Idea:
+- Dots for:
+	-venue/jobs
+- Dots color for:
+	-venue type
+	-job industry
+- heatmap/elevation of grid for:
+	-  counts within a grid square for art events or art venues | science job company buildings
+- Arc & brush:
+	- artists at more than one venue
+	- science job term at more than one location
+- Arc Color:
+	- does artist at more than one venue appear to go to different venue type?
 
