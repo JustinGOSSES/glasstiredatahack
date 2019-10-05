@@ -80,7 +80,6 @@
 - What census data to bring in? Based on zipcode? 
 	- number of events vs. race % 
 	- number of events vs. 
-- 
 
 
 ## Things to maximize:
@@ -88,5 +87,22 @@
 - Easy for general audience
 - Provides Glastire with insight
 - Can be on their site?
+
+Three pages:
+- Story
+	- What is the distribution! 
+		- Science vs. Art
+		- What is the categorization?
+			- What are mapped areas
+				- Types of art go here & types of science go here
+			- event frequency for each venue as timeline
+			- artist total appearances
+			- new artists with multiple appearances 
+			- lost artists with multiple appearances
+			- total number of events at venue
+	- 
+- Exploration with Kepler
+- Exploration with Tableau
+- Exploration with Tensorboard
 
 
