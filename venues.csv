@@ -1,0 +1,781 @@
+venue_uid,"venue","coordinates","address","city","zip","url"
+12265,"Mossrock Studio and Fine Art Gallery","30.1391369,-95.4496876","26002 Oak Ridge Drive","The Woodlands","77380","www.mossrockstudio.com"
+19644,"Wedge International Tower","29.755307,-95.3699431428572","1415 Louisiana Street","Houston","77002",NULL
+59280,"Asia Society Texas Center","29.7265535714286,-95.38433","1370 Southmore Boulevard","Houston","77004","asiasociety.org/texas"
+75028,"Canal Street Gallery","29.758776,-95.347585","2219 Canal Street","Houston","77003","canalstreetgallery.com/joomla/index.php"
+96395,"ARTCRAWL Houston","29.7589382,-95.3676974",NULL,"Houston","77002","artcrawlhouston.com"
+113940,"Buchanan Gallery","29.3033266,-94.7960163","220 25th Street","Galveston","77550","www.buchanangallery.com"
+176405,"Jack Meier Gallery","29.7256278367347,-95.4131353877551","2310 Bissonnet Street","Houston","77005","www.jackmeiergallery.com"
+197265,"Fiesta Mart","29.6974731,-95.4179848","8130 Kirby Drive","Houston","77054",NULL
+218224,"One Allen Center","29.75764635,-95.3705105560667","500 Dallas Street","Houston","77002",NULL
+220855,"Gremillion & Co. Fine Art","29.7205549,-95.3934833","2501 Sunset Boulevard","Houston","77005","www.gremillion.com"
+228059,"Molly Gotchman Studio","29.7272886610268,-95.4156053071649","2442 Bartlett Street","Houston","77098",NULL
+284892,"Menil Collection Bookstore (Menil Collection)","29.7379928,-95.39851405","1520 Sul Ross Street","Houston","77006","www.menil.org/visit/bookstorecomein.php"
+302292,"One Green Street","29.7814213061224,-95.3943486326531","3423 White Oak Drive","Houston","77007",NULL
+332744,"Blinn College Art Gallery","29.76726,-96.1425199","3701 Outlet Center Drive","Sealy","77474","www.blinn.edu"
+345578,"Glasscock School of Continuing Studies (Rice University)","29.714474,-95.406839","6100 Main Street, Anderson-Clarke Center","Houston","77005",NULL
+416130,"Art Gallery (LSC Kingwood)","30.051647,-95.245432","20000 Kingwood Drive","Kingwood","77339","kingwood.lonestar.edu"
+476776,"Gray Contemporary","29.7346225,-95.4200989","3508 Lake Street","Houston","77098","www.graycontemporary.com"
+512846,"Sicardi | Ayers | Bacino","29.738947,-95.397845","1506 West Alabama Street","Houston","77098","www.sicardi.com"
+534110,"1743 Kipling Street","29.740078,-95.4061827","1743 Kipling Street","Houston","77098",NULL
+538497,"Houston Vineyard","29.7910111,-95.3877124","1035 East 11th Street","Houston","77009","www.houstonvineyard.org"
+554808,"Natachee's","29.7386508,-95.3796433","3622 Main Street","Houston","77002","www.natachees.com"
+557630,"Caroline Collective","29.7296438461538,-95.3828358461539","4820 Caroline Street","Houston","77004","carolinecollective.cc"
+558770,"7831 Fondren Road","29.694174,-95.510691","7831 Fondren Road","Houston","77074",NULL
+561716,"Block 7 Wine Company","29.7684850816327,-95.4093352653061","720 Shepherd Drive","Houston","77007","www.block7wineco.com"
+582724,"Walter's Downtown","29.7697908,-95.3596329","1120 Naylor Street","Houston","77002","www.waltersdowntown.com"
+606854,"All Over Houston Multi-venue",NULL,NULL,"Houston",NULL,NULL
+612969,"Koelsch Haus","29.734432,-95.388987","801 Richmond Avenue","Houston","77006","koelschgallery.com"
+615820,"Moody Center for the Arts (Rice University)","29.7143317,-95.4048969","6100 Main Street, MS-480","Houston","77005","moody.rice.edu"
+695791,"Aker Imaging Gallery","29.769926,-95.408822","4708 Lillian Street","Houston","77007","www.akerimaging.com"
+712212,"David Shelton Gallery","29.7328175,-95.3908126","4411 Montrose Boulevard, Suite B","Houston","77006","davidsheltongallery.com"
+716100,"What Have You","29.73105,-95.3275202","1308 Telephone Road","Houston","77023","www.whathaveyou.us"
+750269,"Imago Dei Gallery","29.720657,-95.4167219","2525 Robinhood Street","Houston","77005","www.imagodeigallery.com"
+761464,"El Bambi","29.7978537,-95.385482","4721 North Main Street","Houston","77009","www.facebook.com/elbambihtx/"
+769711,"Meredith Long and Company","29.7486959,-95.4158167","2323 San Felipe Street","Houston","77019","www.meredithlonggallery.com"
+807204,"The Brayerroom","29.723104,-95.401683","1708 Sunset Boulevard","Houston","77005","thebrayerroom.wordpress.com"
+817872,"Super Happy Funland","29.741161,-95.342575","3801 Polk Street","Houston","77003","www.superhappyfunland.com"
+819363,"Laura Rathe Fine Art","29.7493038,-95.462209","1700 Post Oak Boulevard","Houston","77056",NULL
+863478,"The Collective at the Midtown Art Center Tea Room","29.7376529591837,-95.3748224285714","1413 Holman Street","Houston","77004",NULL
+876417,"Carnegie Branch (Houston Public Library)","29.7820726,-95.3607295","1050 Quitman Street","Houston","77009","houstonlibrary.org/location/carnegie-neighborhood-library-and-center-learning"
+881857,"Art Square Studios on Commerce","29.7565999,-95.3491568","2315 Commerce Street","Houston","77003",NULL
+881985,"Heritage Plaza Lobby","29.7591138979592,-95.3707293673469","1111 Bagby Street","Houston","77002",NULL
+895422,"Meyer Metro Gallery","29.7062414705882,-95.4704889117647","5207 Bissonnet Street","Bellaire","77401","www.meyermetrogallery.com"
+909677,"1506 Lorraine Street","29.778132,-95.3549447","1506 Lorraine Street","Houston","77009",NULL
+966651,"Margolis Gallery (Congregation Beth Israel)","29.6796586,-95.4674815","5600 North Braeswood Boulevard","Houston","77096","www.beth-israel.org/public/pag275.aspx"
+977086,"1406 Indiana Street","29.7496974,-95.3990683","1406 Indiana Street","Houston","77006",NULL
+984952,"EaDo Workspaces","29.7452808,-95.3450534","3420 Rusk Street","Houston","77003",NULL
+989834,"Plant It Forward Farms (University of St. Thomas)","29.738083,-95.3977186","1318 Sul Ross Street","Houston","77006","ddd"
+1077923,"Aurora Picture Show","29.7272886610268,-95.4156053071649","2442 Bartlett Street","Houston","77098","aurorapictureshow.org/pages/home.asp"
+1088463,"The Barn","29.7551722,-95.3503068","2201 Preston Street","Houston","77003",NULL
+1097735,"Navigation Esplanade","29.757667,-95.3448017","2600 Navigation Boulevard","Houston","77003",NULL
+1102985,"2404 Montrose Gallery","29.7479654285714,-95.3920885102041","2404 Montrose Boulevard","Houston","77006","www.2404montrose.com"
+1136467,"Tunnel System Beneath The Esperson Building","29.7588837755102,-95.3648098367347","808 Travis Street","Houston","77002",NULL
+1145359,"Main Street Projects","29.7246365,-95.3905619","3717 Main Street","Houston","77002","www.midmainhouston.com/msp"
+1150052,"Heights Contemporary Art Gallery, or H Gallery","29.802885244898,-95.4084631632653","617 West 19th Street","Houston","77008",NULL
+1153402,"Menil Collection","29.737713,-95.3978528571429","1515 Sul Ross Street","Houston","77006","www.menil.org"
+1166499,"Insomnia Gallery","29.7347805,-95.3319837","708 Telephone Road, Suite C","Houston","77023","www.theinsomniagallery.com"
+1183905,"713INC","29.776716,-95.361608","1912 North Main Street","Houston","77009",NULL
+1202932,"Art Guys World Headquarters","29.8493658633252,-95.4231187030828","5757 Knox Street","Houston","77091","theartguys.com"
+1212828,"Galveston Artist Residency","29.3054588,-94.7972298","2521 Ship Mechanic Row Street","Galveston","77550","galvestonartistresidency.org"
+1246353,"Third Space (UH)","29.7245052,-95.342471","4188 Elgin Street, Room 100","Houston","77204",NULL
+1261491,"FrenetiCore / Frenetic Theater","29.7501632040816,-95.321253244898","5102 Navigation Boulevard","Houston","77011","www.freneticore.net"
+1300447,"Dudley Recital Hall (UH)","29.7203625,-95.3435584","4800 Calhoun Road, 1st Floor, Fine Arts Building","Houston","77004",NULL
+1315886,"Transart Foundation for Art and Anthropology","29.7388318,-95.3971229","1412 West Alabama Street","Houston","77006",NULL
+1334084,"Alamo Drafthouse @ Mason Park","29.7765647,-95.7496731","531 South Mason Road","Katy","77450","drafthouse.com/houston/mason_park"
+1358830,"Studio 1821","29.738334,-95.4077697","1821 West Alabama Street","Houston","77098","www.studio1821.com"
+1372240,"The Art Institute of Houston (AIH)","29.7302757,-95.4479535","4140 Southwest Freeway","Houston","70027","www.artinstitutes.edu/houston/"
+1396764,"Koelsch Gallery","29.7527419,-95.3940784","1020 Deden Street","Houston","77006","www.koelschgallery.com"
+1405677,"George H. Lewis and Sons Funeral Directors","29.7557211,-95.4802541","1010 Bering Drive","Houston","77057",NULL
+1412195,"International Modern Art Gallery","29.723400,-95.403639","1802 Sunset Boulevard","Houston","77005","www.imagallery.org"
+1426933,"The Studio of Anthony Day and Justine Waitkus","29.747899,-95.393348","2401 Van Buren Street","Houston","77006",NULL
+1459984,"DiverseWorks","29.7685355,-95.3559525","1117 East Freeway","Houston","77002","www.diverseworks.org"
+1540059,"Williams Tower Gallery","29.737804,-95.460759","2800 Post Oak Boulevard","Houston","77056",NULL
+1552307,"West Ave. River Oaks","29.740757,-95.418861","2800 Kirby Drive","Houston","77098",NULL
+1613212,"2426 Bartlett Street, Suite D","29.7273762,-95.4182755","2426 Bartlett Street, Suite D","Houston","77098",NULL
+1647308,"DiverseWorks","29.7355171,-95.3811904","3400 Main Street, Suite 292","Houston","77002","diverseworks.org"
+1657885,"Emancipation Park","29.7357077,-95.3665813","3018 Emancipation Avenue","Houston","77004","www.houstontx.gov/parks/parksites/emancipationpark.html"
+1664149,"The Museum of Drawing, Houston","29.7905599,-95.392948","628 East 11th Street","Houston","77008","www.modhouston.org"
+1687068,"Alliance Française de Houston","29.7430692,-95.3892042","427 Lovett Boulevard","Houston","77006","www.alliancehouston.org"
+1714973,"The Second Bedroom","29.734697,-95.407719","1920 Richmond Avenue","Houston","77098","www.thesecondbedroom.gallery/exhibitions/"
+1719345,"Next Wall Gallery","29.7470655667101,-95.4001622406632","1717 Michigan Street","Houston","77006","n/a"
+1729644,"SAMARA Gallery","29.7345029,-95.4271142","3100 Richmond Avenue","Houston","77098","www.samaragallery.com"
+1737223,"Mother Dog Studios","29.7669719169717,-95.3551001992501","720 Walnut Street","Houston","77002","home.earthlink.net/~motherdogstudios/mother"
+1747891,"Aerosol Warfare Gallery & Boutique","29.7446138,-95.359999","2110 Jefferson Street, Suite 113","Houston","77003","www.myspace.com/aerosolwarfare"
+1759779,"The Houston Studios","29.763834,-95.360087","110 Main Street, Suite #200","Houston","77002","www.thehoustonstudio.com"
+1767648,"Buffalo Bayou Park","29.7625113,-95.3882","Allen Parkway @ Gillette Street","Houston","77019",NULL
+1770792,"Hello Project","29.7346746734694,-95.4199782653061","3508 Lake Street","Houston","77098","helloprojectgallery.com"
+1792180,"Art Alley at Sawyer Yards","29.771869,-95.3840617","1502 Sawyer Street","Houston","77007","www.sawyeryards.com/single-post/2018/10/02/Outer-Limits-Sculpture-in-Art-Alley"
+1793924,"Red Maple Gallery Houston","29.7295421,-95.3953795","1116 Milford Street","Houston","77006","www.redmaplegalleryhouston.com"
+1794329,"White Oak Music Hall","29.7858133,-95.3668186","2915 North Main Street","Houston","77009","www.whiteoakmusichall.com"
+1831244,"Civic TV Collective","29.7497027346939,-95.3563748367347","2119 Dallas Street","Houston","77003","www.civictvcollective.com"
+1882788,"Dean's Credit Clothing Montrose","29.7481414285714,-95.3858984285714","315 Fairview Street","Houston","77006",NULL
+1906992,"BR Vino","29.5594915,-95.8095386","1917 Avenue G","Rosenberg","77471","www.brvino.com"
+1917776,"Silos at N. St. Charles and Kennedy streets","29.7601427,-95.3415353","490 North Live Oak Street","Houston","77003",NULL
+1952652,"Mixed Emotions Fine Art & Frame Gallery","29.7483143902172,-95.3833625520871","95 Tuam Street","Houston","77006","mixedemotions.com/ "
+1959807,"The Temporary Space","29.7681062244898,-95.3539984081633","1320 Nance Street","Houston","77002","www.thetemporaryspace.com"
+1981613,"Boom Boom Room","29.8092533928571,-95.3992509285714","2518 Yale Street","Houston","77008","theboomboomroomhouston.com"
+2074378,"The Heritage Society","29.7593071,-95.3733798","1100 Bagby Street","Houston","77002","www.heritagesociety.org"
+2079210,"Settlement Goods","29.7374483,-95.3907192","3939 Montrose Boulevard, Suite M","Houston","77006","settlementgoods.com "
+2092188,"Buffalo Bayou Brewing Company","29.776135,-95.415983","5301 Nolda Street","Houston","77007","www.buffbrew.com"
+2092539,"Liberty Station","29.767957,-95.379569","2101 Washington Avenue","Houston","77007",NULL
+2101824,"Clarke & Associates","29.7910034,-95.3972462","301 East 11th Street","Houston","77008","www.clarkeassoc.com"
+2120052,"Space Montrose","29.7429604,-95.4023247","1706 Westheimer Road","Houston","77098","www.spacemontrose.com"
+2145467,"The Heights Theater","29.8031919,-95.4050573","339 West 19th Street","Houston","77008","theheightstheater.com"
+2188428,"Optical Project","29.7909195510204,-95.3872143061224","1125 East 11th Street","Houston","77009","www.billdavenport.com/opticalproject/optica"
+2204740,"Kaboom Books","29.7866573174603,-95.3720224920635","3116 Houston Avenue","Houston","77009","www.kaboombooks.com"
+2207413,"Airline Drive @ East Whitney Street","29.828850,-95.384229","4400 Airline Drive","Houston","77022","www.theartguys.com/situation.html"
+2222642,"Blossom Street Gallery","29.7674431598682,-95.4096283108735","4809 Blossom Street","Houston","77007",NULL
+2237894,"Petal Gallery in the Magnolia Brewery Building","29.7645814,-95.362577","715 Franklin Street","Houston","77002",NULL
+2260451,"BS Projects","29.8200876,-95.4601119","4540 West 34th Street, Suite D","Houston","77092",NULL
+2271027,"EMERGEncy Room Gallery","29.7173941,-95.4018312","6100 Main Street","Houston","77005","studioart.rice.edu/Content.aspx?id=2147483734"
+2272587,"3300 Jensen Drive","29.792762,-95.341707","3300 Jensen Drive","Houston","77026",NULL
+2285067,"Mobil Gas Station","29.733455,-95.3656","3305 Dowling Street","Houston","77004",NULL
+2314006,"13 Celsius","29.74119,-95.373692","3000 Caroline Street","Houston","77004","www.13celsius.com"
+2363632,"ArtStorm","29.7576387,-95.3605511","4828 Caroline Street","Houston","77004","www.artstormhouston.com"
+2466528,"R.A. Apffel Park/East Beach Pavilion","29.3301735,-94.7350764","1923 Boddeker Road","Galveston","77550",NULL
+2484744,"The Waterworks in Buffalo Bayou Park","29.7635122,-95.3792642,14.6","105 Sabine Street","Houston","77007","buffalobayou.org/visit/destination/buffalo-bayou-park/#water-works"
+2533723,"Rice University","29.720582,-95.393813","6100 Main Street","Houston","77005","www.rice.edu"
+2563396,"Westheimer Road & Hillcroft Street","29.737777,-95.487354","6000 Westheimer Road","Houston","77057",NULL
+2575785,"14 Pews","29.8097397906977,-95.3893475116279","800 Aurora Street","Houston","77009","14pews.org"
+2594833,"Esperson Gallery","29.7545065,-95.3649847","1201 Fannin Street, Suite 131","Houston","77002",NULL
+2598196,"Aurora Studios & Gallery","29.809944,-95.3977929","129 Aurora Street","Houston","77008","www.facebook.com/AuroraStudiosintheheights/?ref=bookmarks"
+2611891,"Jumper Maybach Fine Art","29.8026638,-95.4028725","238 West 19th Street","Houston","77008","www.facebook.com/JumperMaybachFineArt/"
+2652651,"Sugar Land Auditorium","29.6248745,-95.6298186","226 Lakeview Drive","Sugar Land","77498","slcaf.org/sugar-land-auditorium/"
+2681243,"Post HTX","29.7660696,-95.3645899","401 Franklin Street","Houston","77201","www.facebook.com/posthouston/"
+2683950,"The Gimp Room at the Glass Peacock","29.7787916,-95.3729244","Glass Peacock","Houston","77008","www.facebook.com/gimproom"
+2730495,"Rice Architecture (Rice University)","29.7189082,-95.4019502","6100 Main Street, MD Anderson Hall","Houston","77005","arch.rice.edu"
+2733986,"Houston City Hall","29.760656,-95.369502","901 Bagby Street","Houston","77002","www.houstontx.gov "
+2754372,"Atelier Jacquinet Art Studio and Gallery","29.763422,-95.3519999","913 McKee Street","Houston","77002","atelierjacquinet.com"
+2797286,"Anya Tish Gallery","29.7331773877551,-95.3910081836735","4411 Montrose Boulevard","Houston","77006","www.anyatishgallery.com"
+2838960,"Zoya Tommy Contemporary","29.7331773877551,-95.3910081836735","4102 Fannin Street","Houston","77004","www.zoyatommy.com"
+2854766,"Border, USA | MX","29.7417869,-95.3801014","1302 Dennis Street","Houston","77004",NULL
+2857335,"G Gallery","29.7910235,-95.3949771","301 East 11 Street","Houston","77008","www.ggalleryhouston.com"
+2873662,"Commerce Street Gallery","29.760131,-95.353352","1701 Commerce Street","Houston","77002","www.commercestgallery.com/location.html"
+2882905,"ArtHouston",NULL,"P.O. Box 980693","Houston","77098","www.arthouston.com"
+2930578,"Paper and Space Artist Residency","29.7403343,-95.3899901","615 Kipling Street, Unit 7","Houston","77006","www.paperandspace.com"
+2936622,"Hilton Americas Houston","29.75154905,-95.3606511935232","1600 Lamar Street","Houston","77010","www3.hilton.com/en/hotels/texas/hilton-americas-houston-HOUCVHH/index.html"
+2959161,"Hunter Gather","29.717055,-95.473347","5320 Gulfton Street, Suite 15","Houston","77081","www.huntergatherproject.com"
+2974930,"Moores Opera House (UH)","29.7251621,-95.344576","3333 Cullen Boulevard, 120 School Of Music Building","Houston","77204","www.uh.edu/class/music/opera/about-us/opera-house/"
+2977656,"Studio Gallery","29.8028953,-95.4085155","613 1/2 West 19th Street, Suite A","Houston","77008","www.mwstudiogallery.com"
+2994965,"2800 Fannin Street","29.7435761,-95.3763952","2800 Fannin Street","Houston","77002",NULL
+2997761,"Boheme Cafe and Wine Bar","29.7481428979592,-95.3858553265306","307 Fairview Street","Houston","77006","barboheme.com"
+3029515,"Tomo Mags","29.738591,-95.3905517","703 West Alabama Street","Houston","77006",NULL
+3029537,"The DeLuxe Theater","29.7760605,-95.3366626","3303 Lyons Avenue","Houston","77020","www.thedeluxetheater.com"
+3035397,"Booker-Lowe Gallery","29.766020755102,-95.4074988367347","4623 Feagan Street","Houston","77007","www.bookerlowegallery.com"
+3062173,"Crosspoint Community Church","29.7663318,-95.7422109","700 South Westgreen Boulevard","Katy","77450",NULL
+3071924,"Apama Mackey Gallery","29.6613818,-95.2174752","628 East 11th Street","Houston","77504","www.mackeygallery.com"
+3099856,"The Architecture Center Houston Foundation","29.7628673,-95.3689592","315 Capitol Street, Suite 120","Houston","77002","www.aiahouston.org"
+3141046,"University Academic Center Gallery (HBU)","29.6980291836735,-95.5152786326531","7502 Fondren Road","Houston","77074","www.hbu.edu/artgallery"
+3143806,"DeSantos Gallery","29.7345219,-95.3967355","1724-A Richmond Avenue","Houston","77098","www.desantosgallery.com"
+3151828,"Progressive Amateur Boxing Association","29.734219,-95.3655519","3212 Downling Street","Houston","77004",NULL
+3155723,"Moody Gallery","29.734756,-95.421653","2815 Colquitt Street","Houston","77098","www.moodygallery.com"
+3214624,"Total Plaza","29.7565278,-95.3685713818705","1601 West Alabama Street","Houston","77002",NULL
+3255090,"Wade Wilson Art","29.732777,-95.390707","4411 Montrose Boulevard, Suite #200","Houston","77006","www.wadewilsonart.com"
+3260883,"Westheimer Street Festival","29.7448235,-95.387463","300-500 Westheimer Road","Houston","77006",NULL
+3297716,"North Gallery (SJC North)","29.8101089,-95.180628","5800 Uvalde Road","Houston","77049",NULL
+3352428,"BLUEorange Contemporary","29.75338284,-95.39438396","1208 West Gray Street","Houston","77019","blueorangehouston.com"
+3368192,"University Academic Center (HBU)","29.6980291836735,-95.5152786326531","7502 Fondren Road","Houston","77074",NULL
+3399400,"Bevy Lab","29.7678813,-95.3561577","1310 Nance Street","Houston","77002",NULL
+3417198,"Mason Park Community Center Club House","29.7237104,-95.2966522","541 South 75th Street","Houston","77023",NULL
+3430069,"Mariago Collective","29.7639617,-95.39888","1707 Waugh Drive","Houston","77006","1707collective.com"
+3445901,"2619 Arbor Street","29.7225046,-95.3730973","2619 Arbor Street","Houston","77004",NULL
+3461842,"5601 Navigation Boulevard","29.7482595,-95.3190967","5601 Navigation Boulevard","Houston","77011",NULL
+3463717,"UNIX Gallery","29.732777,-95.3928957","4411 Montrose Boulevard, Suite C","Houston","77006","www.unixgallery.com"
+3510342,"Craft Salon","29.7455709387755,-95.4020070816326","2307 Dunlavy Street","Houston","77006","www.craftsalonhouston.com"
+3536561,"Heights Art Studio and Gallery","29.8112935714286,-95.3972181428571","214 East 27th Street","Houston","77008","www.heightsartstudios.com"
+3550312,"College of the Mainland Art Gallery (CoM)","29.3958545,-94.9996207","1200 Amburn Road","Texas City","77591","www.com.edu/arts-culture/gallery.php"
+3555411,"The Record Ranch Gallery (Cactus Music)","29.7334905530965,-95.4108956164531","2110 Portsmouth Street","Houston","77098","www.cactusmusictx.com"
+3568998,"1933 Dryden Road","29.7109142,-95.4054954","1933 Dryden Road","Houston","77030",NULL
+3630958,"Pablo Cardoza Gallery","29.771869,-95.3840617","1502 Sawyer Street, #141","Houston","77007","pablocardozagallery.com"
+3635620,"Select Studios Photography","29.7730326632653,-95.4118483061225","5016 Allen Street","Houston","77007",NULL
+3707130,"Dimmitt Contemporary","29.737532,-95.4381927","3637 West Alabama Street, #160","Houston","77027","dimmittcontemporaryart.com"
+3708126,"Hiram Butler Gallery","29.7676543469388,-95.4063963673469","4520 Blossom Street","Houston","77007","www.devinbordenhirambutlergallery.com"
+3742630,"Ahearn Room at the Crooker Center (University of St. Thomas)","29.738651,-95.391267","3800 Montrose Boulevard","Houston","77006",NULL
+3752483,"Buffalo Bayou Park Cistern","29.7618375,-95.3757073","105 Sabine Street","Houston","77007","buffalobayou.org/visit/destination/the-cistern/"
+3763254,"Katy Contemporary Art Museum","29.786581,-95.822283","805 Avenue B","Katy","77493",NULL
+3772654,"Private Eye Gallery","29.728044,-95.3282624","1540 Telephone Road","Houston","77023","www.facebook.com/privateeyegallery/"
+3775918,"Reliant Center","29.687908,-95.405454","1 NRG Park","Houston","77054","reliantpark.com"
+3779830,"Smith Street Gallery","29.755261,-95.3726087","1600 Smith Street","Houston","77002",NULL
+3781505,"Campus Gallery (San Jacinto College South)","29.6040443,-95.2284853","13725 Beamer Road, Marie Flickinger Fine Arts Center","Houston","77089",NULL
+3804532,"Moody Mansion Garage","29.2991604897959,-94.7958439795918","2618 Broadway Avenue J","Galveston","77550",NULL
+3816741,"Texas Gallery","29.7523955454545,-95.408722","2012 Peden Street","Houston","77019","www.texgal.com"
+3843275,"Tx/Rx Labs","29.7509371836735,-95.3404534693878","205 Roberts Street","Houston","77003","www.txrxlabs.org"
+3850762,"The Contemporary Art Guys Museum","29.8493658633252,-95.4231187030828","5757 Knox Street","Houston","77091","theartguys.com"
+3879357,"Miller Outdoor Theatre","29.7148356,-95.389314","6000 Hermann Park Drive","Houston","77030",NULL
+3887462,"Darke Gallery","29.7656385185185,-95.4162057037037","320 Detering Street","Houston","77007","www.darkegallery.com"
+3887486,"Shrimp Festival Site 2014","29.7582729,-95.3303151","901 North York Street","Houston","77003",NULL
+3893837,"I610 Loop","29.813551,-95.3719679","610 North Loop West","Houston","77009",NULL
+3899928,"urban studio of eARThly debris","29.773313,-95.4125067","1318 Durham Drive","Houston","77007",NULL
+3905084,"District Art Gallery","29.7678767,-95.3562985","810 Richey Street","Houston","77002","www.districtartgalleries.com"
+3907646,"Charlton Community Center","29.687663,-95.274494","8200 Park Place Boulevard","Houston","77017",NULL
+3934682,"The Capitol at St. Germain","29.7589677,-95.3631083","705 Main Street","Houston","77002","www.thecapitolhouston.com"
+3952689,"Sundance Cinemas","29.762442,-95.366486","510 Texas Street","Houston","77002","www.sundancecinemas.com/houston.html"
+3988749,"Art Supply on Main","29.7444937346939,-95.3746728979592","2711 Main Street","Houston","77002","artsupplyonmain.com"
+3998459,"Legacy Room (Houston City Hall)","29.7606791,-95.3724261","900 Bagby Street","Houston","77002",NULL
+4004618,"Lambert Hall","29.801058755102,-95.3979823061224","1703 Heights Boulevard","Houston","77008",NULL
+4011713,"Discovery Green","29.754134,-95.359323","1500 McKinney Street","Houston","77010","www.discoverygreen.com"
+4024092,"Bea Ying Projects Pop-Up Gallery","29.7816846107781,-95.3735544999994","1606 White Oak Drive","Houston","77009","beayingprojects.com"
+4029071,"Hardy & Nance Street Studio Complex","29.7687124825535,-95.3512162978562","902 Hardy Street","Houston","77020","nancestreetstudios.blogspot.com"
+4036593,"Galveston Arts Center","29.307313,-94.792954","2127 Strand Street","Galveston","77550","www.galvestonartscenter.org"
+4079019,"Finesilver Gallery Houston","29.7246365,-95.3905619","3913 Main Street","Houston","77002","www.finesilver.com"
+4150171,"1300 Andrews Street (Freedmen's Town)","29.755859,-95.380577","1300 Andrews Street","Houston","77019",NULL
+4155903,"1940 Air Terminal Museum","29.64706925,-95.2861792287931","8325 Travelair Street","Houston","77061",NULL
+4169497,"Kinzelman Art Consulting","29.7246365,-95.3905619","3909 Main Street","Houston","77002","www.kinzelmanart.com"
+4174713,"Houston Center","29.75636,-95.3654762","909 Fannin Street","Houston","77010","houstoncenter.com/home.axis"
+4202457,"Talento Bilingue de Houston TBH Center","29.7603707733333,-95.3445929066667","333 South Jensen Drive","Houston","77003","www.tbhcenter.org"
+4224158,"Sharpstown Community Center","29.7086363333333,-95.5280807681159","6600 Harbor Town Drive","Houston","77036",NULL
+4246651,"Glass Crescent","29.806247,-95.379109","1609 Northwood Street","Houston","77009",NULL
+4246900,"La Nova Tile Importers","29.7460263,-95.37422","2325 Fannin Street","Houston","77054",NULL
+4331112,"Villains","29.758545,-95.350777","2001 Commerce Street","Houston","77002","www.villainshouston.com"
+4333748,"3809 Rosedale Street","29.7146225,-95.3562586","3809 Rosedale Street","Houston","77004",NULL
+4334497,"Station Museum of Contemporary Art","29.725085,-95.3554069","1502 Alabama Street","Houston","77004","www.stationmuseum.com"
+4346308,"para/site","29.7319513673469,-95.365307755102","2519 Holman Street","Houston","77004","galeriaperdida.com/main.html"
+4362617,"Harris Gallery","29.726225,-95.392018","1100 Bissonnet Street","Houston","77006","www.harrisgalleryhouston.com"
+4377961,"Saint Arnold Brewing Company","29.771508,-95.348911","2000 Lyons Avenue","Houston","77020","www.burningbonespress.com"
+4403402,"Nos Caves Vin (Wroxton Location)","29.724572,-95.416907","2501 Wroxton Road","Houston","77005",NULL
+4415947,"Freedmen's Town Association","29.7565494,-95.383448","1320 Robin Street","Houston","77019",NULL
+4427406,"Amplify Sugar Land - Crossbridge Gallery","29.6350989756098,-95.6188444512195","1049 Eldridge Road","Sugar Land","77478","amplifysugarland.com"
+4451265,"Space HL","29.7395411,-95.3410013","1303 Cullen Boulevard","Houston","77023","www.galleryhomeland.org"
+4458439,"BeHuman Gallery","29.7790182,-95.5610984","12848 Queensbury Lane, Suite 204","Houston","77024","www.behumangallery.com"
+4507326,"AIG's Life Building","29.7602556,-95.3947109","2727 Allen Parkway","Houston","77019",NULL
+4509071,"Fresh Arts","29.7718041,-95.3801122","2101 Winter Street, Suite B11","Houston","77007","fresharts.org"
+4522702,"Aurora Video Library","29.7378765714286,-95.398009755102","1524 Sul Ross Street","Houston","77006","aurorapictureshow.org"
+4529008,"Public House Heights","29.7816982571429,-95.3882963","2802 White Oak Drive","Houston","77007","publichouseheights.com"
+4531890,"Home of Saul Banda","29.773439,-95.3544885","1511 Everett Street","Houston","77009",NULL
+4536201,"Houston's First Baptist Church","29.7842287810097,-95.4587495034272","7401 Katy Freeway","Houston","77024",NULL
+4575100,"Suzanne Deal Booth Centennial Pavilion, James Turrell Skyspace (Rice University)","29.7184003,-95.3981109","6100 Main Street","Houston","77251",NULL
+4578810,"Art Car Museum","29.7669703469388,-95.3971324285714","140 Heights Boulevard","Houston","77007","www.artcarmuseum.com"
+4599642,"Alabama Song","29.7194386632464,-95.3744275750002","2521 Oakdale Street","Houston","77004",NULL
+4623546,"Westheimer Block Party","29.744681,-95.38493","300 Westheimer Road","Houston","77006","www.freepresshouston.com"
+4683018,"Deerslug Studio","29.757931,-95.3526946","2020 Commerce Street","Houston","77002","www.facebook.com/Deerslug-Studio-455371251303475/"
+4720303,"Sig's Lagoon","29.7386737,-95.3795866","3622 Main Street","Houston","77002","www.sigslagoon.com"
+4731788,"Peel Gallery","29.732777,-95.390707","4411 Montrose Boulevard, Suite 400","Houston","77006","www.peelgallery.org"
+4736967,"Art of the World Gallery","29.7422261,-95.4141723","2201 Westheimer Road","Houston","77098","www.artoftheworldgallery.com"
+4747014,"The Menil Collection","29.737713,-95.3978528571429","1515 Sul Ross Street","Houston","77006","menil.org"
+4748624,"First Saturday Arts Market","29.8027432857143,-95.406924877551","548 West 19th Street","Houston","77008","www.yalestreetmarket.com/Main/HomePage"
+4782189,"BeDESIGN","29.7388457,-95.4109722","2016 West Alabama Street","Houston","77098",NULL
+4787952,"Sabine Street Studios","29.7747718,-95.378559","1907 Sabine Street","Houston","77007","www.sawyeryards.com/SabineStreet"
+4788569,"Khon's","29.7450802653061,-95.3770132244898","2808 Milam Street","Houston","77006","www.khonsbar.com"
+4803519,"2132 Bissonnet Street","29.7259113,-95.4123966","2132 Bissonnet Street","Houston","77005",NULL
+4839648,"The Gallery (HCC Central)","29.7375592857143,-95.3750667755102","3517 Austin Street","Houston","77004","central.hccs.edu/events/event-title-241647-en.html"
+4868840,"Moody Gardens","29.2736963,-94.8491195","1 Hope Boulevard","Galveston","77554","moodygardens.org"
+4907937,"Public Storage","29.742835,-95.408587","2006 Westheimer Road","Houston","77098",NULL
+4950257,"Independence Art Studios","29.8372714572864,-95.4053214924623","419 Janisch Road","Houston","77018","www.independenceartstudios.com"
+4969381,"Intuitive Eye Annex","29.7910205,-95.3871707","1125 East 11th Street","Houston","77009",NULL
+4971427,"Richmond Hall (Menil Collection)","29.73490045,-95.39805775","1500 Richmond Avenue","Houston","77006","menil.org/visit/flavin.php"
+4981263,"In Front of Sam Houston Park","29.760013,-95.370235","1000 Bagby Street","Houston","77002",NULL
+4984980,"18 Hands Gallery","29.8031846,-95.4012149","249 West 19th Street, Suite B","Houston","77008","www.18handsgallery.com"
+4993577,"Wagner Sousa Modern Art","29.3046863913043,-94.7959973478261","404 25th Street","Galveston","77550","www.wagnersousamodernart.com"
+4994396,"S&T Art and Design","29.7759772,-95.3840903597152","2424 Sawyer Heights Street","Houston","77007","www.sandtartanddesign.com"
+5031284,"Laura Rathe Fine Art","29.7347594545455,-95.4202408181818","2707 Colquitt Street","Houston","77098","www.laurarathe.com"
+5043966,"Wilhelmina Cullen Robertson Auditorium (UHD)","29.7246365,-95.3905619","1 Main Street","Houston","77002",NULL
+5045215,"The East-Klectic","29.740658,-95.33841","4101 Dallas Street","Houston","77023",NULL
+5081784,"Texas Collaborative Arts","29.7908181428571,-95.3951453673469","303 East 11th Street","Houston","77008","www.texascollaborative.com"
+5213004,"Bmoody Art Gallery","29.7477861,-95.379792","97 Dennis Street","Houston","77006","bmoodyart.com"
+5231713,"Barbara Davis Gallery","29.7331773877551,-95.3910081836735","4411 Montrose Boulevard","Houston","77006","www.barbaradavisgallery.com"
+5271019,"The UNIT Store","29.7753769,-95.3765494","1824 Spring Street, #110","Houston","77007","theunitblog.com"
+5292769,"MegaHost Gallery","29.734427,-95.389957","901 Richmond Avenue","Houston","77006","www.facebook.com/pages/MegaHost-Gallery/203711452992683"
+5304019,"Arc House","29.7710449,-95.3694522","1008 Edwards Street","Houston","77007",NULL
+5316554,"Sugar Land Town Square","29.5956449,-95.6220667","15958 City Walk","Sugar Land","77479",NULL
+5332352,"Nouveau Antique Art Bar","29.743207,-95.375657","2913 Main Street","Houston","77002","www.art-bar.net"
+5340658,"guerrero-projects","29.7327623,-95.3929703","4411 Montrose Boulevard","Houston","77006","www.facebook.com/guerreroprojectshouston"
+5361358,"Studio of the late Virgil Grotfeldt","29.847557,-95.440788","2007 Paul Quinn Street","Houston","77027",NULL
+5392379,"Peveto","29.7347646734694,-95.4190827755102","2627 Colquitt Street","Houston","77098","www.peveto.org"
+5446079,"Pictures Plus","29.7474568571429,-95.3841584285714","115 Hyde Park Boulevard","Houston","77006",NULL
+5449928,"Hines College of Architecture (UH)","29.679304,-95.3039249","4200 Elgin Street","Houston","77004","www.arch.uh.edu"
+5480286,"Market Square Park","29.7626134,-95.3621888","301 Milam Street","Houston","77002",NULL
+5483912,"White Space","29.7816859230769,-95.3892216923077","2914 White Oak Drive","Houston","77007",NULL
+5488892,"4019 La Branch Street","29.733507,-95.3790316","4019 La Branch Street","Houston","77004",NULL
+5503135,"William P. Hobby Airport","29.6529506,-95.2766507","7800 Airport Boulevard","Houston","77061","www.fly2houston.com/hou/overview/"
+5509348,"BNIM","29.7298784,-95.3868907","4916 Main Street, Suite 100","Houston","77002",NULL
+5527059,"McClain Gallery","29.7342822857143,-95.4138517142857","2242 Richmond Avenue","Houston","77098","www.mcclaingallery.com"
+5546662,"Las Manos Mágicas","29.767437,-95.410379","4819 Blossom Street","Houston","77007","www.lasmanosmagicas.com"
+5553094,"The Union","29.7675261,-95.3845802","2315 Union Street","Houston","77007","www.theunionhtx.com"
+5565634,"Green House Gallery","29.739007,-95.3886044","716 West Alabama Street","Houston","77006","www.greenhouseartgallery.com"
+5597520,"Live Oak Friends Meeting House","29.809648,-95.423653","1318 West 26th Street","Houston","77008","www.friendshouston.org"
+5619990,"Buffalo Bayou Art Park","29.771251122449,-95.4126804693878","5106 Center Street","Houston","77007","www.bbap-houston.org"
+5628617,"Texas Southern University Museum (TSU)","29.724583,-95.36261","3100 Cleburne Street","Houston","77004","www.tsu.edu/about/history/museum.asp"
+5635178,"Chuntaro Jones Studio","29.7729894343434,-95.3836425252525","2500 Summer Street","Houston","77007",NULL
+5655105,"The Secret Group","29.7489221,-95.3588784","2101 Polk Street","Houston","77003","www.thesecretgrouphtx.com"
+5687413,"The Fat Cap Gallery","29.7499199,-95.3540719","912 Saint Charles Street","Houston","77003","thefatcap.net"
+5731082,"Installations Antiques","29.8059362217581,-95.4084008367992","611 West 22nd Street","Houston","77008","www.installationsantiques.com/index.html"
+5759561,"Inman Gallery Annex","29.7246365,-95.3905619","3917 Main Street","Houston","77002","www.inmangallery.com"
+5762323,"Nance Street Gallery","29.7681056122449,-95.3540482040816","1310 Nance Street","Houston","77002",NULL
+5764669,"Nau-haus","29.7908041428571,-95.3960782653061","223 East 11th Street","Houston","77008",NULL
+5771741,"The Alexander House","29.7561849,-95.3978677","6060 Gulfton Street, Apt. 1909","Houston","77081",NULL
+5791400,"Lee College Performing Arts Center Gallery","29.7348343061224,-94.9762579387755","711 West Texas Avenue","Baytown","77520",NULL
+5811036,"Commerce Street Artists Warehouse","29.757275,-95.348541","2315 Commerce Street","Houston","77002","www.commercestreetartistswarehouse.com"
+5812647,"George R. Brown Convention Center","29.7546985,-95.3569277","1001 Avenida de las Americas","Houston","77010","www.houstonconventionctr.com"
+5818110,"Forma 110","29.7755669,-95.3789679","1824 Spring Street, #109","Houston","77007",NULL
+5820000,"2716 Arbor Street","29.722095953961,-95.3708138180844","2716 Arbor Street","Houston","77004",NULL
+5823921,"The Temple","29.7497841,-95.3537195","2300 McKinney, 4th Floor","Houston","77003",NULL
+5834787,"Davis Hardware","29.7896305555556,-95.3877238888889","1028 Studewood Street","Houston","77008","www.davishardware.com"
+5859943,"Midtown Bar & Grill","29.7531964,-95.3893962","415 West Gray Street","Houston","77019","www.houstonmidtownbarandgrill.com"
+5875816,"2426 Bartlett Street, Suite C","29.7273762,-95.4182755","2426 Bartlett Street, Suite C","Houston","77098",NULL
+5900037,"Abby Lee's Studio G","29.758337,-95.350758755102","2020 Commerce Street","Houston","77002",NULL
+5903412,"Gallery M Squared","29.802980244898,-95.4022954285714","339 West 19th Street","Houston","77008","www.gallerymsquared.com"
+5903810,"United Way, Houston","29.7671064,-95.3984896303076","50 Waugh Drive","Houston","77007","www.unitedwayhouston.org"
+5909450,"Founders Club (The Hobby Center)","29.761677,-95.368883","800 Bagby Street","Houston","77002",NULL
+5976362,"Eldorado Ballroom (Project Row Houses)","29.7347976530612,-95.3657457142857","2310 Elgin Street","Houston","77004","projectrowhouses.org"
+5983291,"Elizabeth Baldwin Park","29.7374944,-95.3701909","1702 Elgin Street","Houston","77004",NULL
+6009405,"Concourse Gallery","29.755261,-95.3726087","1600 Smith Street","Houston","77002",NULL
+6022610,"Houston Center for Photography","29.7386353673469,-95.3964656122449","1441 West Alabama Street","Houston","77006","www.hcponline.org"
+6029270,"Vaughan Christopher Gallery","29.755054,-95.4097259","1217 South Shepherd Drive","Houston","77019","www.vaughanchristopher.com"
+6049204,"Vinal Edge Records","29.8030026326531,-95.4000845918367","239 West 19th Street","Houston","77008","www.vinaledge.com"
+6065063,"West Alabama Icehouse","29.7383825,-95.4100223","1919 West Alabama Street","Houston","77098",NULL
+6125238,"Gallery Jatad","29.7296256326531,-95.3799038163265","1517 Blodgett Street","Houston","77004","galleryjatad.com"
+6126382,"Cullen Theatre Hall (University of St. Thomas)","29.736999,-95.393648","4001 Mt. Vernon Street","Houston","77006",NULL
+6127990,"Isis Houston","29.7605717142857,-95.3618104693878","1010 Prairie Street","Houston","77002","www.isishouston.com"
+6142594,"Art in Mo$h'n at 2425 Dowling ","29.7388617272727,-95.3614008787879","2425 Dowling Street","Houston","77004","lovelyloyalty.blogspot.com"
+6176573,"Nusrat Malik's House","29.7342606530612,-95.3648322857143","2418 Elgin Street","Houston","77004",NULL
+6204343,"1201 Oliver Street","29.7705786,-95.3885367","1201 Oliver Street","Houston","77007",NULL
+6249733,"Gallery 220 (HBU)","29.6980291836735,-95.5152786326531","7502 Fondren Road, University Academic Center","Houston","77074",NULL
+6259055,"The Art Institute of Houston North (AIH North)","29.9398595,-95.5452039","10740 North Gessner Drive","Houston","77064","www.artinstitutes.edu/houston-north/"
+6302098,"Cloister Gallery (Christ Church Cathedral)","29.7593754285714,-95.3613893469388","1117 Texas Avenue","Houston","77002",NULL
+6347849,"Blaffer Museum's Window Into Houston","29.764958,-95.361268","110 Milam Street","Houston","77002","www.class.uh.edu/blaffer/"
+6372939,"ICA Open Studio Tour","29.7589382,-95.3676974",NULL,"Houston","77007","www.innerartcorridor.org"
+6394891,"University of Houston, Clear Lake Art Gallery (UHCL)","29.5775782307692,-95.1066882307692","2700 Bay Area Boulevard","Houston","77058","prtl.uhcl.edu/portal/page/portal/HSH/HOME/U"
+6425244,"Commune","29.7272886610268,-95.4156053071649","2442 Bartlett Street","Houston","77098",NULL
+6435471,"1610 Vermont Street","29.749646,-95.4025452","1610 Vermont Street","Houston","77006",NULL
+6450183,"Jung Center","29.726832,-95.391116","5200 Montrose Boulevard","Houston","77006","www.cgjunghouston.org"
+6470334,"Blank Check Gallery","29.771869,-95.3840617","1502 Sawyer Street, #141","Houston","77007","www.blankcheck.gallery"
+6474523,"Art Palace","29.7366566,-95.380711","3913 Main Street","Houston","77002","www.artpalacegallery.com"
+6478977,"V The Gallery at Villagio Town Center","29.7355547,-95.7633113","22756 Westheimer Parkway, #180","Katy","77450","www.vthegallery.com"
+6480276,"The Silos on Sawyer","29.771835,-95.381568","1502 Sawyer Street","Houston","77007","www.thesilosonsawyer.com"
+6495752,"Thornwood Gallery","29.7347638571429,-95.4192297142857","2643 Colquitt Street","Houston","77098","www.thornwoodgallery.com"
+6567283,"Gallery Sonja Roesch","29.7454890612245,-95.370059122449","2309 Caroline Street","Houston","77004","www.gallerysonjaroesch.com"
+6569912,"Blaffer Art Museum (UH)","29.7223514,-95.3425217","4173 Elgin Street, 120 Fine Arts Building","Houston","77204","blafferartmuseum.org"
+6573974,"5926 Moonmist Drive","29.7112106,-95.4883877","5926 Moonmist Drive","Houston","77081",NULL
+6598433,"LCD Gallery","29.7634572,-95.3623096","114 Main Street, 5th Floor","Houston","77002","www.lcdgallery.com"
+6617588,"The Joanna Gallery","29.736883,-95.395828","1401 Branard Street","Houston","77006","www.thejoanna.org"
+6618085,"Contemporary Arts Museum Houston","29.726739755102,-95.391116","5216 Montrose Boulevard","Houston","77006","www.camh.org"
+6669651,"Rice Media Center (Rice University)","29.713371,-95.406547","600 Main Street","Houston","77005","www.ruf.rice.edu/~media/"
+6788753,"Herring Hall Auditorium (Rice University)","29.7173941,-95.4018312","6100 Main Street","Houston","77005",NULL
+6789082,"The Art Center of Baytown","29.732746,-94.9710817","110 West Texas Avenue","Baytown","77520","www.art-league-of-baytown.org"
+6798720,"Parkerson Gallery","29.7346635918367,-95.4199780816326","3510 Lake Street","Houston","77098","www.parkersongallery.com"
+6837995,"Bad News Bar","29.7619795,-95.3611351","308 Main Street","Houston","77002",NULL
+6838236,"War'hous Visual Studio","29.732058,-95.384508","4715 Main Street","Houston","77004","www.warhous.com"
+6852043,"McGovern Historical Center","29.682095,-95.391008","8272 El Rio Street, #190","Houston","77054","library.tmc.edu/mcgovern/"
+6906352,"Kallinen Contemporary","29.7226086938776,-95.2783805306123","511 Broadway Street","Houston","77012","kallinenhorn.com"
+6906371,"Joan Wich & Company","29.7331773877551,-95.3910081836735","4411 Montrose Boulevard","Houston","77006","www.joanwichgallery.com"
+6935439,"Barnevelder Movement Arts Complex","29.7551722,-95.3503068","2201 Preston Street","Houston","77003","www.barnevelder.org"
+6942427,"Prairie View A&M University Art Gallery","30.0940073,-95.9874688","100 University Drive, 4th Floor, John B. Coleman Library","Prairie View","77446","www.pvamu.edu/pages/3665.asp"
+6953705,"The Tremont House","29.3062114,-94.7948092","2300 Ship Mechanic Row Street","Galveston","77550","www.galveston.com/thetremonthouse/"
+6970541,"A 2nd Cup","29.7910813,-95.3889048","1111 East 11th Street","Houston","77009","www.a2ndcup.com"
+6990269,"Performance Art Houston's Instagram",NULL,NULL,"Houston",NULL,"www.instagram.com/performancearthouston/"
+7003882,"Peek Realty","29.715610,-95.381134","5925 Almeda Road, Suite E","Houston","77004",NULL
+7028847,"Daniel-Kayne","29.7497841,-95.3537195","2300 McKinney, #403","Houston","77003","www.daniel-kayne.com"
+7049963,"Front Gallery","29.7336233030303,-95.3967752727273","1412 Bonnie Brae Street","Houston","77006",NULL
+7067185,"Fort Bend Art Center / Art League Fort Bend","29.5591052,-95.8081977","2012 Avenue G","Rosenberg","77471","www.artleaguefortbend.org"
+7077612,"The Art Cellar of Houston","29.759117,-95.626012","1460 Eldridge Parkway, #120","Houston","77077","artcellarhouston.com"
+7111510,"Mystic Lyon","29.7764873,-95.3218079","5017 Lyons Avenue","Houston","77020",NULL
+7128662,"Czech Center Museum","29.729198122449,-95.3844670408163","4920 San Jacinto Street","Houston","77004",NULL
+7156150,"Alley Theatre","29.7620983,-95.3653365","615 Texas Street","Houston","77002","www.alleytheatre.org"
+7174363,"3708 S Main Street","29.7383648,-95.3820951","3708 South Main Street","Houston","77002",NULL
+7285244,"Lee and Joe Jamail Skate Park","29.761378874919,-95.3754661590762","103 Sabine Street","Houston","77007",NULL
+7310067,"Ecclesia","29.768656,-95.3693908","1100 Elder Street","Houston","77007",NULL
+7407344,"Santos Headquarters","29.930803,-95.622926","10702 Allens Landing Drive","Houston","77065",NULL
+7417402,"Two Allen Center","29.7569962,-95.3710391","1200 Smith Street","Houston","77002",NULL
+7462795,"Civic TV Laboratories","29.7792093,-95.3641339","2108 Freeman Street","Houston","77009",NULL
+7478900,"Select Skate Shop","29.7479366530612,-95.4022297142857","2016 Dunlavy Street","Houston","77006","selectskates.com"
+7485143,"203 East 26th Street","29.8107205,-95.3993145","203 East 26th Street","Houston","77008",NULL
+7509310,"Texas Art Supply","29.751333,-95.392297","2002 Montrose Boulevard","Houston","77006",NULL
+7532718,"Main Street Square","29.7576488,-95.3642902","900-1100 Blocks of Main Street","Houston","77002",NULL
+7535394,"Hooks-Epstein Galleries","29.7347644693878,-95.4191195102041","2631 Colquitt Street","Houston","77098","www.hooksepsteingalleries.com"
+7539113,"Flex Space Houston","29.742402,-95.402255","2608 Dunlavy Street","Houston","77006",NULL
+7542497,"New World Museum","29.7712488181818,-95.4146626818182","5230 Center Street","Houston","77007","www.newworldmuseum.org"
+7546246,"The University of Houston, Main Campus (UH)","29.7214917,-95.3440202128152","4800 Calhoun Road","Houston","77004","www.uh.edu"
+7555162,"The Houstonian","29.767613,-95.4626537","111 North Post Oak Lane","Houston","77024","www.houstonian.com"
+7578564,"Galveston Historical Foundation","29.308281,-94.7934747","2002 Strand Street","Galveston","77550",NULL
+7582503,"The Duende Art Project","29.7535472,-95.3940621","1208 West Gray Street","Houston","77019","www.duendeartproject.com"
+7637251,"Houston Cinema Arts Society","29.7329869,-95.3907429","4409 Montrose Boulevard, Suite 150","Houston","77006","cinemartsociety.org"
+7643183,"Lone Star College – Montgomery County","30.2106258,-95.4670463","3200 College Park Drive","Conroe","77384",NULL
+7687800,"Louis Shanks Furniture - Houston","29.73462,-95.521014","2800 Fondren Road","Houston","77063",NULL
+7729187,"BOX 13 ArtSpace","29.7372928,-95.3081826","6700 Harrisburg Boulevard","Houston","77001","www.box13artspace.com"
+7822122,"Rosenberg Library","29.301163,-94.792941","2310 Sealy Street","Galveston","77550","rosenberg-library.org"
+7832687,"Char Bar","29.7626112653061,-95.361623877551","305 Travis Street","Houston","77002",NULL
+7848483,"The Art Guys Museum of Art and Wonders, Etc.","29.8493658633252,-95.4231187030828","5757 Knox Street","Houston","77091","www.theartguys.com/Contact.html"
+7879153,"3116 Garrow Street","29.7507826,-95.3444879","3116 Garrow Street","Houston","77003",NULL
+7891562,"Allen Parkway from Waugh to Bagby","29.7607657,-95.3879484","Allen Parkway","Houston","77019",NULL
+7898351,"Inferno Gallery (Rice University)","29.7173941,-95.4018312","6100 Main Street","Houston","77005","matchbox.rice.edu"
+8062818,"Wesley Community Center","29.7811968,-95.3533891","1410 Lee Street","Houston","77009","www.wesleyhousehouston.org/about-us/contact-us/"
+8067413,"My Flaming Heart","29.7387919,-95.3796565","3622 Main Street, Suite C","Houston","77002",NULL
+8109500,"Sloan Hall","29.7427233,-95.4197505","2620 Westheimer Road","Houston","77098",NULL
+8133311,"Babaloo International Cafe & Bar","29.7355547,-95.7633113","22756 Westheimer Parkway, #190","Katy","77450","www.babaloocafe.net/index.html"
+8142945,"Burning Bones Press","29.7984546938776,-95.3990333469388","1518 Yale Street","Houston","77008","www.burningbonespress.com"
+8151685,"4300 Harrisburg Boulevard","29.7445583,-95.3357863","4300 Harrisburg Boulevard","Houston","77011",NULL
+8197221,"Arlington Street Studios","29.8023823636364,-95.3945232121212","1831 Arlington Street","Houston","77008",NULL
+8202383,"Decorative Center of Houston","29.7622979531803,-95.4660305206001","5120 Woodway Drive","Houston","77056","www.decorativecenter.com"
+8203443,"901 North York Street","29.7582729,-95.3325038","901 North York Street","Houston","77003",NULL
+8210759,"Sedition Books","29.734427,-95.389957","901 Richmond Avenue","Houston","77006","seditionbooks.org"
+8259844,"Eureka Heights Brew Co","29.8018003,-95.4190106","941 West 18th Street","Houston","77008","www.eurekaheights.com"
+8298559,"Houston Museum of African American Culture","29.729702625,-95.382561","4807 Caroline Street","Houston","77004","www.hmaac.org"
+8298780,"Flying Carpet Creative’s Fabrication Space","29.7424594,-95.3489224","3302 Polk Street","Houston","77003","www.flyingcarpetcreative.com"
+8321535,"The Raven Grill","29.7257245510204,-95.4055497346939","1916 Bissonnet Street","Houston","77005","www.theravengrill.com"
+8333750,"Muir Fine Art Gallery","29.7794511,-95.5602836","796 Town and Country Boulevard, Suite 114","Houston","77024","www.MuirFineArtGallery.com"
+8346100,"JoMar Visions","29.7687312,-95.3507938","1707 Nance Street, Studio E","Houston","77020","www.jomarvisions.com"
+8369811,"Houston Community College-Southeast (HCC Southeast)","29.704264,-95.2974295714286","6815 Rustic Street","Houston","77087",NULL
+8372249,"Cardoza Fine Art","29.7681062244898,-95.3539984081633","1320 Nance Street","Houston","77002",NULL
+8441850,"The Woodlands High School","30.1943386,-95.5041172","6101 Research Forest Drive","The Woodlands","77381","twhsat.weebly.com"
+8458474,"Mary Matteson-Parrish Gallery (LSC Montgomery)","30.2106258,-95.4670463","3200 College Park Drive","Conroe","77384","montgomery.lonestar.edu/109620/"
+8459271,"Continental Club","29.7385682,-95.3799289","3700 Main Street","Houston","77002","www.continentalclub.com/Houston.html"
+8471094,"Bayou Music Center","29.7625821,-95.3675193","520 Texas Avenue","Houston","77002",NULL
+8479067,"DoubleTree by Hilton Hotel Houston Downtown","29.758435,-95.371211","400 Dallas Street","Houston","77002","doubletree1.hilton.com/en_US/dt/hotel/HOUDBDT-DoubleTree-by-Hilton-Hotel-Houston-Downtown-Texas/index.do"
+8532749,"Island Gallery","29.3072118,-94.7953706","2328 Strand Street","Galveston","77550",NULL
+8570906,"Already Within Project Space","29.7342769,-95.3814892","4106-4108 Caroline Street","Houston","77004",NULL
+8573380,"John Cleary Gallery","29.7347642653061,-95.419156244898","2635 Colquitt Street","Houston","77098","www.johnclearygallery.com"
+8582368,"University of Houston School of Art (UH)","29.7248985,-95.3428602","4173 Elgin Street","Houston","77004","www.uh.edu/class/art/"
+8673725,"Carol Piper Rugs","29.752911,-95.402047","1809 West Gray Street","Houston","77019","carolpiperrugs.com"
+8678283,"Upper Kirby Building","29.7335866,-95.4240589497719","3015 Richmond Avenue","Houston","77098",NULL
+8685805,"d. m. allison","29.7347592727273,-95.4203120909091","2709 Colquitt Street","Houston","77098",NULL
+8692473,"Rudolph Blume Fine Art | ArtScan Gallery","29.7343485263158,-95.4060155263158","1836 Richmond Avenue","Houston","77098","www.rudolphblume.com"
+8710033,"Abigail Ogilvy Gallery Pop Up","29.7375941,-95.410249","3911 McDuffie Street","Houston","77098","www.abigailogilvy.com"
+8710352,"Brazos Bookstore","29.7254303333333,-95.4153008333333","2421 Bissonnet Street","Houston","77005"," www.brazosbookstore.com"
+8714656,"Sapori Ristorante","29.7357364,-95.5966294","12225 Westheimer Road, #B","Houston","77077","www.saporihouston.com "
+8743244,"Frank White Studio","29.76852875,-95.35596225","1109 East Freeway","Houston","77002",NULL
+8762705,"Heights Art Gallery","29.7935708,-95.4196554","3202 White Oak Drive","Houston","77008",NULL
+8781562,"Studio 101","29.7752312857143,-95.3762571836735","1824 Spring Street","Houston","77007","springstreetstudios.info/2012/"
+8787414,"Arab American Cultural & Community Center","29.6564208,-95.5682331","10555 Stancliff Road","Houston","77099","www.facebook.com/acchouston/"
+8831808,"Farrago's","29.7521518571429,-95.3772529591837","318 Gray Street","Houston","77002",NULL
+8843294,"4th Floor Projects Gallery (UH)","29.724710,-95.342373","3401 Cullen Boulevard","Houston","77204","www.art.uh.edu"
+8848008,"Domy Books","29.7426946666667,-95.4024456666667","1709 Westheimer Road","Houston","77098","www.domystore.com"
+8856522,"The Studio @ Splendora Gardens","30.268812,-95.1599987","26041 Midline Road","Cleveland","77328",NULL
+8864063,"George Bush Intercontinental Airport (IAH)","29.9650504,-95.3370433","16930 John F Kennedy Boulevard","Houston","77032","www.airport-houston.com"
+8917048,"Hermann Park","29.7148356,-95.389314","6001 Fannin Street","Houston","77030","www.hermannpark.org/hours.php"
+8921171,"JuiceBOX Containers at Rice University","29.716517,-95.404377","6100 Main Street","Houston","77005",NULL
+8931364,"Home Of Lionardo Matamores","29.78019775,-95.3656697083333","415 Quitman Street","Houston","77009","www.vbbarts.org"
+9010528,"216 N Edgewood Street","29.7478092,-95.3236804","216 North Edgewood Street","Houston","77011",NULL
+9034885,"Beauty Box","29.733684,-95.3657742916667","3302 Dowling Street","Houston","77004",NULL
+9038499,"Fifth Ward Jam","29.7760375714286,-95.3329065510204","3705 Lyons Avenue","Houston","77020",NULL
+9041257,"East End Studio Gallery","29.7347805,-95.3314365","708 Telephone Road, Suite C","Houston","77023","www.eestudiogallery.com/1.html"
+9081322,"Sesquicentennial Park","29.7589382,-95.3676974","400 Texas Avenue","Houston","77002","www.houstontx.gov/sqpark/index.htm"
+9088367,"HCC Stafford Fine Arts Center Art Gallery","29.628908,-95.5551392","9910 Cash Road","Stafford","77477","www.hccs.edu/locations/southwest-college/stafford-campus/"
+9148352,"Fernland Historical Park","30.1027513,-95.8177153","20774 Eva Street","Montgomery","77356",NULL
+9215998,"OFFsite / Apama Mackey Gallery","29.7942836,-95.3947488","314 East 13th Street","Houston","77008","www.mackeygallery.com/offsite/default.htm"
+9224808,"Felix 55","29.7160748,-95.415373","5510 Morningside Drive, #120","Houston","77005","www.felix55.com"
+9267027,"College of the Mainland Art Gallery Satellite (CoM)","29.3958545,-94.9996207","1200 Amburn Road","Texas City","77591","www.com.edu/gallery"
+9274477,"University of Houston Student Center South (UH)","29.720324,-95.340902","4455 University Drive","Houston","77204","www.uh.edu"
+9284819,"Looscan Neighborhood Library","29.744961,-95.441744","2510 Willowick Road","Houston","77027",NULL
+9378732,"Betz Gallery","29.75338284,-95.39438396","1208 West Gray Street","Houston","77019","www.betzgallery.com"
+9434903,"Houston Fire Museum","29.7474414,-95.3747871","2403 Milam Street","Houston","77006","www.houstonfiremuseum.org"
+9473142,"Premium Goods","29.7167520204082,-95.4153188979592","2416 Times Boulevard","Houston","77005","www.premiumgoods.net"
+9489663,"Stages Repertory Theatre","29.759979,-95.400484","3201 Allen Parkway","Houston","77019","www.stagestheatre.com/cms_home/index.html"
+9526366,"Beck Center","29.6998273,-95.5299762","8100 Roos Road","Houston","77036",NULL
+9549403,"4411 Montrose Special Events Gallery","29.7331773877551,-95.3910081836735","4411 Montrose Boulevard","Houston","77006",NULL
+9559937,"Antidote","29.7848946,-95.3880224","729 Studewood Street","Houston","77007","www.antidotecoffee.com"
+9576675,"Redbud Gallery","29.7908181428571,-95.3951453673469","303 East 11th Street","Houston","77008","www.redbudgallery.com"
+9587024,"Fine Arts Gallery (LSC North Harris)","30.0063352,-95.3799192","2700 W.W. Thorne Drive","Houston","77073",NULL
+9611157,"Watermark Fine Art","29.7347099183673,-95.4197898163265","3503 Lake Street","Houston","77098","www.watermarkfineart.com"
+9634931,"Poissant Gallery","29.7712510408163,-95.4126534897959","5102 Center Street","Houston","77007","www.poissantgallery.com"
+9725714,"The Center for Art and Photography at Celebration Company (Jewish Family Service)","29.6880365,-95.4462358","4131 South Braeswood Boulevard","Houston","77025","www.celebrationcompany.org"
+9733210,"Travis Tower","29.75457,-95.3667","1301 Main Street","Houston","77002","www.travistower.com"
+9743125,"Devin Borden Gallery","29.7367831,-95.3828569","3909 Main Street","Houston","77002","www.devinborden.com"
+9770103,"Hyde Park Gallery","29.7474568571429,-95.3841584285714","115 Hyde Park Boulevard","Houston","77006","www.hydeparkgallery.com"
+9772215,"20 N. Chenevert","29.7606965,-95.3518459","20 North Chenevert Street","Houston","77002",NULL
+9774287,"Black Hole Coffee House","29.7324901,-95.3971845","4504 Graustark Street","Houston","77006","m.facebook.com/blackhole.coffeehouse/"
+9783535,"Insomnia Video Games","29.7347805,-95.3336252","708 Telephone Road","Houston","77023","www.theinsomniagallery.com"
+9794617,"Notsuoh","29.7621347142857,-95.3609501428571","314 Main Street","Houston","77002","www.myspace.com/notsuohmusic"
+9873468,"Bryan Miller Gallery","29.7246365,-95.3905619","3907 Main Street","Houston","77002","www.bryanmillergallery.com"
+9902051,"Hunter Gorham Gallery","29.7416709,-95.4337472","1834 1/2 Westheimer Road","Houston","77098",NULL
+9919206,"labotanica","29.734775244898,-95.3657071428571","2316 Elgin Street","Houston","77004","labotanica.org"
+9926839,"Tradition Bank Gallery","29.728318122449,-95.3911299591837","5020 Montrose Boulevard","Houston","77006",NULL
+9927925,"Architecture Center Houston","29.7628673,-95.3689592","315 Capitol Street, Suite 120","Houston","77002","www.aiahouston.org"
+9929570,"Spacetaker Gallery","29.7718041,-95.3801122","2101 Winter Street, Studio 11","Houston","77266","www.spacetaker.org"
+9960048,"Pearl Fincher Museum of Fine Arts","30.0129467,-95.5101669","6815 Cypresswood Drive","Spring","77379","www.pearlmfa.org"
+9976546,"Winter Street Studios","29.77187045,-95.3798089149235","2101 Winter Street","Houston","77007","www.winterstreetstudios.net"
+10000716,"Archway Gallery","29.7454775,-95.4018794","2305-A Dunlavy Street","Houston","77006","www.archwaygallery.com"
+10019787,"Resurrection Metropolitan Community Church","29.789652,-95.4183337","2025 West 11th Street","Houston","77008","www.resurrectionmcc.org"
+10024156,"Wilson Montessori","29.7477447,-95.3989488","2100 Yupon Street","Houston","77006","www.houstonisd.org/wilsonmontessori"
+10025203,"Houston Police Officer’s Memorial","29.7628383,-95.3830674","1300 Memorial Drive","Houston","77019","www.houstontx.gov/parks/artinparks/policeofficersmemorial.html"
+10059929,"Masjid Al-Salam","30.0091139,-95.5602529","16700 Old Louetta Road","Spring","77379","www.alsalammasjid.org"
+10070694,"River Oaks Bank Building","29.7478512,-95.4183323","2001 Kirby Drive","Houston","77019",NULL
+10136979,"Cynthia Woods Mitchell Center (UH)","29.8548916,-95.4564728","4800 Calhoun Road","Houston","77091","www.mitchellcenterforarts.org"
+10137684,"Houston Center for Contemporary Craft","29.730715804878,-95.3858012682927","4848 Main Street","Houston","77002","www.crafthouston.org"
+10174866,"New Gallery/Thom Andriola","29.7424105714286,-95.3788832244898","3225 Milam Street","Houston","77006","www.newgalleryhouston.com"
+10194916,"Galleria Lazzara","29.814454,-95.467768","5400 Mitchelldale Street, Suite B7","Houston","77092","www.gallerialazzara.com"
+10213335,"Aether Space","29.7817635,-95.3944672","3210 White Oak Drive","Houston","77007","www.aetherspaceart.com"
+10215854,"Minute Maid Park","29.757481,-95.356748","501 Crawford Street","houston","77002","houston.astros.mlb.com/hou/ballpark/index.jsp"
+10227742,"Julia Ideson Building (Houston Public Library)","29.75944625,-95.3699900990414","500 McKinney Street","Houston","77002","www.houstonlibrary.org/julia-ideson-building"
+10229094,"Houston Museum of Natural Science","29.7190573,-95.381379","1 Hermann Circle Drive","Houston","77030","www.hmns.org"
+10278896,"Tienda X","29.7389991,-95.3987207","1420 West Alabama Street","Houston","77006",NULL
+10293201,"Children's Museum","29.7225873,-95.3851747148551","1500 Binz Street","Houston","77006","www.cmhouston.org"
+10316129,"Cherryhurst House","29.7451865714286,-95.3972407142857","1603 Cherryhurst Street","Houston","77006",NULL
+10330916,"Aurora Residency","29.7416709,-95.4337472","1834 1/2 Westheimer Road","Houston","77098",NULL
+10339974,"The Joannex","29.736883,-95.395828","1401 Branard Street","Houston","77006","thejoanna.org"
+10362227,"Folklore Films Studio","29.735307,-95.381246","4118 Fannin Street","Houston","77003","www.folklorefilms.org"
+10393708,"Hartgrove Galleries","29.7353472424242,-95.4824273838384","5905 Winsome Lane","Houston","77057",NULL
+10407329,"610 Gallery","29.812445,-95.397178","205 East 28th Street","Houston","77008","610gallery.wordpress.com"
+10422073,"Piola Houston","29.7427083,-95.3797071","3201 Louisiana Street, Suite #130","Houston","77006","www.piola.it"
+10434253,"El Rincon Social","29.74993322209,-95.3423297254765","3210 Preston Street","Houston","77003","elrinconsocial.org"
+10439642,"Cindy Lisica Gallery","29.7327623,-95.3907816","4411 Montrose Boulevard","Houston","77006","cindy-lisica.squarespace.com"
+10479217,"Hotel Ylem","29.6936822,-95.4157688","8080 Main Street","Houston","77025","www.hotelylem.com"
+10483389,"The Wendy","29.7436431578947,-95.3955217368421","1374 Westheimer Road","Houston","77006",NULL
+10490485,"Bush Intercontinental Airport Control Tower","29.988057,-95.349879","S Terminal Road","Houston","77032",NULL
+10509382,"Harambee Gallery in partnership with HTV @ City Hall Houston","29.7601573,-95.3715557","901 Bagby Street","Houston","77002","harambeeartgallery.com/index.htm"
+10534432,"post-studio projects","29.757275,-95.348541","2315 Commerce Street","Houston","77002","www.post-studio.org   "
+10547616,"McMurtrey Gallery","29.7346746734694,-95.4199782653061","3508 Lake Street","Houston","77098","www.mcmurtreygallery.com"
+10559002,"Embassy Suites Downtown Houston","29.75302945,-95.3613308036377","1515 Dallas Street","Houston","77010",NULL
+10586287,"The Audley Society","29.7361883469388,-95.4262017755102","3231 Audley Street","Houston","77098","n/a"
+10615069,"Kulture Restaurant","29.7545818,-95.3569129","701 Avenida De Las Americas, Suite A","Houston","77010","www.facebook.com/KultureHouston/"
+10664583,"Windows On Main","29.741428,-95.377081","3620 Main Street","Houston","77002",NULL
+10711215,"PG Contemporary","29.7421534,-95.379192","3227 1/2 Milam Street","Houston","77006","www.pgcontemporary.com"
+10716065,"Space in Montrose","29.7426143877551,-95.4021578571429","2608 Dunlavy Street","Houston","77006","www.whosinspace.com"
+10725400,"The Houston Foundry","29.7743594,-95.3508324","1712 Burnett Street","Houston","77029","n/a"
+10807537,"James Gallery","29.7734365,-95.3847242","2500 Summer Street, Unit 212","Houston","77007",NULL
+10811152,"Capitol Street Gallery","29.736316,-95.308591","6701 Capitol Street","Houston","77011",NULL
+10815468,"Hannah Bacol Busch Gallery","29.743557,-95.4105962","2501 South Shepherd Drive","Houston","77019",NULL
+10828256,"Moran/Valverde Studio","29.7903249,-95.4134052","303 East 11th Street","Houston","77008",NULL
+10836016,"2101 Winter Street","29.7719266,-95.3819938","2101 Winter Street","Houston","77007",NULL
+10882108,"The Space HTX","29.7585273,-95.3525802","2005 Commerce Street","Houston","77002","www.thespacehtx.com"
+10896671,"Space Center Houston","29.548604,-95.098678","1601 NASA Parkway","Houston","77058","www.spacecenter.org"
+10902844,"MD Anderson Library (UH)","29.7210239,-95.341939","4333 University Drive","Houston","77204","info.lib.uh.edu/p/poetryandprose "
+10907097,"J. Palmer Exhibition Space (CoM)","29.3958375,-95.0017847","1200 Amburn Road","Texas City","77591","www.com.edu/gallery"
+10930357,"Cy Twombly Gallery (Menil Collection)","29.7368630114943,-95.398284908046","1501 Branard Street","Houston","77006",NULL
+10958244,"Wired Up","29.742402,-95.4044437","2608 Dunlavy Street","Houston","77006",NULL
+10966282,"Mongoose Versus Cobra","29.7453578327586,-95.373838479104","1011 McGowen Street","Houston","77002","mongooseversuscobra.com"
+11000839,"The H Gallery","29.717554,-95.414141","2356 Rice Boulevard","Houston","77005","www.hungrysgallery.com"
+11001812,"Vine Sreet Studios Building","29.76786625,-95.35710575","1113 Vine Street","Houston","77002","www.rudolphprojects.com"
+11041996,"Urban Lofts","29.7531796666667,-95.3817583333333","177 West Gray Street","Houston","77019",NULL
+11058957,"The Printing Museum","29.755441,-95.396957","1324 West Clay Street","Houston","77019","www.printingmuseum.org"
+11089742,"6705 Capitol Street","29.7370648,-95.3102746","6705 Capitol Street","Houston","77011",NULL
+11140604,"Itchy Acres","29.834479,-95.4076038","405 Martin Street","Houston","77018",NULL
+11143361,"HOMEcore","29.7580702,-95.3506039","2010 Commerce Street, Unit B","Houston","77002",NULL
+11155733,"Ballroom at Bayou Place","29.762319,-95.3694239","500 Texas Street","Houston","77002",NULL
+11167254,"Bauhaus Houston","29.7475356,-95.3639636","1803 Pease Street","Houston","77033",NULL
+11227709,"Conroe Art League","30.3111166,-95.4568263","127 Simonton Street","Conroe","77301","www.conroeartleague.com"
+11248840,"ARKA Art","29.7314269,-95.3847531","4715 South Main Street","Houston","77002",NULL
+11249739,"2347 North Boulevard","29.7278709,-95.4160671","2347 North Boulevard","Houston","77098",NULL
+11288393,"Holocaust Museum Houston","29.725534,-95.38587","9220 Kirby Drive, Suite 100","Houston","77054","www.hmh.org"
+11294310,"1509 Spring Street","29.7751126938775,-95.3726175714286","1509 Spring Street","Houston","77007",NULL
+11304257,"Houston Via Colori","29.7603571,-95.3693747","901 Bagby Street","Houston","77002",NULL
+11334523,"University of Houston at Sugar Land (UH Sugar Land)","29.5752059,-95.652678","14000 University Boulevard","Sugar Land","77479","www.uh.edu/sugarland/"
+11347050,"Xnihilo Gallery","29.750092,-95.3856178571429","2115 Taft Street","Houston","77006","www.xnil.org/v2/html/"
+11395000,"Under the Radar Brewery","29.734181,-95.375942","1506 Truxillo Street","Houston","77004","www.undertheradarbrewery.com"
+11414200,"The Silo","29.7663523421053,-95.3232972894737","415 Schweikhardt Street","Houston","77020",NULL
+11433915,"1821 West Alabama Street","29.738334,-95.405581","1821 West Alabama Street","Houston","77098",NULL
+11453657,"HCC Spring Branch Campus Art Gallery","29.786364,-95.5630962","1010 West Sam Houston Parkway North","Houston","77043","www.hccs.edu/locations/northwest-college/spring-branch-campus/"
+11491833,"912 St. Charles Street","29.749896,-95.351918","912 St. Charles Street","Houston","77003",NULL
+11506513,"Invisible Gallery","29.7473463,-95.3043974","1601 Wayside Drive","Houston","77011","www.facebook.com/invisible-gallery-236813276339698/"
+11533392,"Hellbox Gallery","29.7426946666667,-95.4024456666667","1709 Westheimer Road","Houston","77098",NULL
+11537273,"Palm Center, 2nd Floor Courtroom","29.696865,-95.333932","5300 Griggs Road","Houston","77021",NULL
+11541711,"Orange Show Center for Visionary Art","29.7177976326531,-95.3245086122449","2402 Munger Street","Houston","77023","www.orangeshow.org"
+11544313,"Zilkha Hall Stage (Hobby Center)","29.761677,-95.368883","800 Bagby Street","Houston","77002","www.thehobbycenter.org/index.php?q=node/124"
+11550677,"Sharespace","29.7506791,-95.3239985","5001 Navigation Boulevard","Houston","77011","www.sharespace.co/"
+11597804,"René Wiley Gallery","29.3049007,-94.7920566","2128 Postoffice Street","Galveston","77550","www.renewileyart.com"
+11607508,"Houston Community College Southwest (HCC SW)","29.7259882,-95.4604104","5601 West Loop South","Houston","77081","southwest.hccs.edu"
+11633450,"The Louis and Annie Friedman Clock Tower","29.7626134,-95.3621888","301 Milam Street","Houston","77002",NULL
+11647084,"11 Below Brewery","29.9526225,-95.5211223","6820 Bourgeois Road","Houston","77066",NULL
+11659247,"1535 Michigan Street","29.747751,-95.4006077","1535 Michigan Street","Houston","77006",NULL
+11697216,"Obsidian Gallery","29.7815737755102,-95.3954507346939","3522 White Oak Drive","Houston","77007","www.hardakerandhardaker.com"
+11716308,"Rec Room Houston","29.760306,-95.353905","100 Jackson Street, #130C","Houston","77002","www.recroomhtx.com"
+11774489,"Isolation Gallery","29.742336122449,-95.3348845714286","4319 Walker Street","Houston","77023","isolationgallery.com"
+11778569,"Brasil Cafe","29.7426376938775,-95.4021584285714","2604 Dunlavy Street","Houston","77006","brasilcafe.net"
+11785671,"Domy Houston","29.7426946666667,-95.4024456666667","1709 Westheimer Road","Houston","77098","domybookstore.com"
+11786582,"The Community Artists' Collective","29.7346417,-95.3798594","4101 San Jacinto Street, Suite 116","Houston","77004","thecollective.org"
+11798058,"2411 Wroxton","29.7244908,-95.4176823","2411 Wroxton Road","Houston","77005",NULL
+11847921,"Alvin Community College Fine Arts Gallery","29.3990253,-95.244978","3110 Mustang Road, Building B, 2nd Floor","Alvin","77511","www.alvincollege.edu/Art"
+11856697,"Lawndale Art Center","29.7296227954545,-95.3866608181818","4912 Main Street","Houston","77002","www.lawndaleartcenter.org"
+11860572,"Flatland Gallery","29.7425668,-95.4046027","1709 Westheimer Road","Houston","77098","www.facebook.com/flatlandgalleryhtx/"
+11864345,"6822 Rowan Lane","29.701177,-95.5051077","6822 Rowan Lane","Houston","77074",NULL
+11868758,"Calico Print Co.","29.745843,-95.34753","1004 Palmer Street","Houston","77003",NULL
+11915400,"Baker Ripley Charter School","29.7110334970528,-95.4969674504451","6500 Rookin Street","Houston","77074",NULL
+11926532,"Houston Art Gallery & Boutique","29.7715977,-95.6032977","14520 Memorial Drive, #16F","Houston","77079",NULL
+11961292,"McWhorter Gallery","29.758776,-95.347585","2219 Canal Street","Houston","77003","www.mcwhortergallery.com"
+11970300,"South Gessner Police Station","29.6494973,-95.5283915","8605 Westplace Drive","Houston","77071",NULL
+12013946,"Melodrama Boutique","29.7221210204082,-95.3790857755102","5306 Almeda Road","Houston","77004","melodramaboutiqueonline.com"
+12026929,"MATCH - Midtown Arts & Theater Center Houston","29.7400665,-95.3788718","3400 Main Street","Houston","77002","www.matchouston.org"
+12042046,"1600 Smith Street","29.7545586744186,-95.3720405232558","1600 Smith Street","Houston","77002",NULL
+12050612,"Capsule Gallery","29.7367831,-95.3806682","3909 Main Street","Houston","77002",NULL
+12059551,"HCC West Loop Campus Art Gallery","29.7213548,-95.4596009","5601 West Loop South","Houston","77081",NULL
+12102841,"Bluffer Gallery","29.7251621,-95.344576","4800 Calhoun Road","Houston","77204",NULL
+12110484,"MKT BAR","29.7543255,-95.3616311","1001 Austin Street","Houston","77010","www.MKTBAR.com"
+12167236,"Foto Relevance","29.7426542,-95.3892524","616 Hawthorne Street","Houston","77006","fotorelevance.com"
+12205918,"Wedge Space","29.7046635,-95.2997982","6815 Rustic Street, Felix Morales Building","Houston","77087","wedgespace.tumblr.com"
+12257063,"Cosentino Center","29.7953243,-95.5652716","1350 West Sam Houston Parkway, Suite 150","Houston","77043",NULL
+12266166,"Gallery Two1Four","29.7665827086432,-95.3606750065383","214 Travis Street","Houston","77002","gallery214.com"
+12266914,"920 Westcott","29.770268,-95.424529","920 Westcott Street","Houston","77007",NULL
+12267103,"Jones Plaza","29.7615182,-95.3673262","601 Louisiana Street","Houston","77002",NULL
+12278794,"Nancy Littlejohn Fine Art","29.7373421,-95.4348901","3465B West Alabama Street","Houston","77027","nancylittlejohnfineart.com"
+12291114,"Elder Street Gallery","29.768535,-95.367726","1101 Elder Street","Houston","77007","www.elderstreetartist.com"
+12292027,"Bering Art Collective","29.7753769,-95.3765494","1824 Spring Street, #119","Houston","77007","www.beringart.com"
+12295343,"MKG Art Management","29.7347527073171,-95.4219433658537","2825 Colquitt Street","Houston","77098","www.mkgart.com"
+12330565,"Museum of Fine Arts, Houston (MFAH)","29.725938,-95.39462","1001 Bissonnet Street","Houston","77005","www.mfah.org"
+12351178,"Studio 703","29.7835722,-95.3990993","703 Yale Street","Houston","77007",NULL
+12375000,"Menil Drawing Institute (Menil Collection)","29.7362167,-95.3969048","1412 West Main Street","Houston","77006","www.menil.org/drawing-institute"
+12399636,"10200 Bellaire Boulvard","29.7069543,-95.5640807","10200 Bellaire Boulevard","Houston","77072",NULL
+12406841,"MLK Center","29.732726,-95.3543247","2720 Sampson Street","Houston","77004",NULL
+12420912,"4188 Elgin Street","29.725853,-95.3415486","4188 Elgin Street","Houston","77004",NULL
+12482980,"City Artworks","29.794148,-95.483721","1330-R Wirt Road","Houston","77055",NULL
+12485585,"Sears","29.7342402,-95.3844946","4201 Main Street","Houston","77002",NULL
+12506114,"Museum of Cultural Arts Houston (MOCAH)","29.7666692244898,-95.3555988571429","908 Wood Street","Houston","77002","mocah.org"
+12529352,"Arlo’s Ballroom","29.7465348,-95.3582007","2119 Leeland Street","Houston","77003","www.facebook.com/arlosballroom/"
+12535941,"Rienzi (MFAH)","29.7573447,-95.4170304","1406 Kirby Drive","Houston","77019",NULL
+12581479,"Deutser Art Gallery","29.6752362,-95.4861775","5601 South Braeswood Boulevard","Houston","77096","www.jcchouston.org/index.php?submenu=arts_c"
+12600090,"Warehouse Live","29.7475267,-95.3584466","813 Saint Emanuel Street","Houston","77003","www.warehouselive.com"
+12611331,"1508 Ridgewood","29.752139,-95.4038217","1508 Ridgewood Street","Houston","77006",NULL
+12640959,"Annex Gallery (HCC Southwest)","29.6244989,-95.5639523","13645 Murphy Road, Suite 250","Stafford","77477","southwest.hccs.edu/southwest"
+12652447,"Angela Davis Park","29.7325652,-95.3902692","Woodrow Street @ Kyle Street","Houston","77006","www.facebook.com/friendsofangeladavispark?fref=photo"
+12705346,"BioScience Research Collaborative (Rice University)","29.683784,-95.4229244","6500 Main Street","Houston","77030",NULL
+12715645,"Byzantine Fresco Chapel","29.7364485,-95.39528385","4011 Yupon Street","Houston","77006",NULL
+12723328,"Chick and Chica Shop Window","29.7384017,-95.3799932","3710 Main Street","houston","77002",NULL
+12727557,"St. Arnold's Brewery","29.771508,-95.348911","2000 Lyons Avenue","Houston","77020",NULL
+12744439,"The Institute For Hispanic Culture","29.737163,-95.427096","3315 Sul Ross Street","Houston","77098","www.ihch.org"
+12757578,"Deborah Colton Gallery","29.7277956,-95.41597","2445 North Boulevard","Houston","77098","www.deborahcoltongallery.com"
+12757804,"215 Grove Street","29.7651395,-95.3390333","215 Grove Street","Houston","77020",NULL
+12773559,"Hello Lucky","29.7895533333333,-95.3879113333333","1025 Studewood Street","Houston","77008","www.hello-lucky.com"
+12803169,"Nizza Mosaic Studio and Gallery","29.7909185306122,-95.3872781836735","1135 East 11th Street","Houston","77009","nizzamosaicstudio.com"
+12821536,"Catacomb","29.757646,-95.347863","2315 Commerce Street, Studio 7","Houston","77002","squareup.com/market/catacomb"
+12861780,"North Set Studios","29.7920167,-95.3633253","3411 Irvington Boulevard","Houston","77009","www.facebook.com/northsetstudios/"
+12887849,"Kindred","29.746428,-95.3961148","2515 Waugh Drive","Houston","77006","www.beinggrace.org"
+12904231,"Black Barbie","29.7515215,-95.3357044","3621 Canal Street","Houston","77003","www.facebook.com/DollsPlay/"
+12909288,"Forum6","29.7756841,-95.3788949","1824 Spring Street, #227","Houston","77007","forum6contemporary.com"
+12952164,"Mackey Gallery","29.7907011428571,-95.391361","628 East 11th Street","Houston","77008","www.mackeygallery.com"
+12963284,"Foelber Pottery Gallery and Studios","29.7345667541131,-95.3880438854748","706 Richmond Avenue","Houston","77006",NULL
+12999371,"Poison Girl Cocktail Lounge","29.7426512,-95.383951","1641 Westheimer Road, Suite B","Houston","77006",NULL
+13020476,"The Brandon","29.7426946666667,-95.4024456666667","1709 Westheimer Road","Houston","77098","www.thebrandoncontemporary.com"
+13046622,"NeNo Studios","29.778132,-95.3549447","1506 Lorraine Street, #A","Houston","77009",NULL
+13076333,"The Galleria","29.7405664333333,-95.4635921666667","5085 Westheimer Road","Houston","77056","www.simon.com/mall/default.aspx?ID=805"
+13080435,"The TANK Space","29.7756841,-95.3788949","1824 Spring Street","Houston","77007","www.springstreetstudios.info"
+13157813,"m Architects","29.7680807,-95.3568895","1206 Nance Street","Houston","77002","www.m-architects.com/art-events/"
+13200844,"Kingwood Town Center","30.0475941,-95.1873431","8 North Main Street","Kingwood","77339",NULL
+13208631,"Rudyard’s Pub","29.7499459,-95.3965971","2010 Waugh Drive","Houston","77006",NULL
+13236364,"Nicole Longnecker Gallery","29.7347647755102,-95.4190644081633","2625 Colquitt Street","Houston","77098","longneckergallery.com"
+13240000,"Axelrad","29.7349641,-95.374773","1517 Alabama Street","Houston","77004","www.axelradbeergarden.com/about/"
+13240030,"Blackburn Music","29.733512,-95.3929519","4314 Yoakum Street, Suite 301","Houston","77006","www.Blackburn-Music.com"
+13251653,"Off the Wall Gallery","29.7388498,-95.4617538","5015 Westheimer Road, Suite 2208","Houston","77056","www.offthewallgallery.com"
+13275212,"Rothko Chapel (Menil Collection)","29.7377392040816,-95.3959643469388","1409 Sul Ross Street","Houston","77006","www.rothkochapel.org"
+13289000,"Altharetta Yeargin Art Museum","29.7808974,-95.5848437","901 Yorchester Drive","Houston","77079","www.facebook.com/Altharetta-Yeargin-Art-Museum-426190580738514/"
+13292265,"Meek Studio & Gallery","29.7749636,-95.3795073","1903 Spring Street","Houston","77007","www.facebook.com/BillMeekStudioandGallery"
+13309569,"Rising Tide Projects","29.3048675,-94.7988807","2510 Market Street","Galveston","77550",NULL
+13329975,"South Park Annex","29.7145753,-95.3406678","5001 Calhoun Street","Houston","77004",NULL
+13354262,"The Next Door Gallery","29.7498258,-95.396475","2020 Waugh Drive","Houston","77006",NULL
+13357951,"Watercolor Art Society","29.7383709,-95.3995419","1601 West Alabama Street","Houston","77006","www.watercolorhouston.org"
+13360379,"The Bryan Museum","29.2974184,-94.7890034","1315 21st Street","Galveston","77550","www.thebryanmuseum.org"
+13360907,"Bosque Gallery (LSC CyFair)","29.9107329,-95.6900105","9191 Barker Cypress Road, Suite 101","Cypress","77433","cyfair.lonestar.edu/bosquegallery"
+13371986,"Project Row Houses","29.7319444081633,-95.3652960612245","2521 Holman Street","Houston","77004","www.projectrowhouses.org"
+13407111,"All Along Little York Road","29.8717577,-95.2742256","Little York Road","Houston","77016",NULL
+13411311,"Lowbrow Houston","29.736005,-95.399409","1601 West Main Street","Houston","77006","lowbrowhouston.com"
+13486306,"Jones Hall (University of Saint Thomas)","29.7376749591837,-95.3926459795918","3910 Yoakum Boulevard","Houston","77006",NULL
+13500511,"Honors Commons (UH)","29.7207301,-95.3423201","4333 University Drive, MD Anderson Library #212","Houston","77004",NULL
+13521856,"University of Houston Clear Lake (UHCL)","29.5825359,-95.0983531","2700 Bay Area Boulevard","Houston","77058",NULL
+13533688,"Arts & Frames","29.2997574878049,-94.7867807073171","1126 19th Street","Galveston","77550",NULL
+13541359,"Wortham Center","29.7624638655581,-95.3668561123646","500 Texas Avenue","Houston","77002","www.houstonfirsttheaters.com/worthamcenter.aspx"
+13572636,"The National Museum of Funeral History","29.9894192,-95.4305195","415 Barren Springs Drive","Houston","77090","nmfh.org"
+13638544,"Evelyn Rubenstein Jewish Community Center of Houston","29.674264,-95.483852","5601 South Braeswood Boulevard","Houston","77096",NULL
+13690805,"Lone Star College - North Harris","30.0063352,-95.3799192","2700 W.W. Thorne Drive","Houston","77073","northharris.lonestar.edu"
+13695903,"Scott Charmin Gallery","29.733593,-95.28483","504 78th Street","Houston","77012","scottcharmin.tumblr.com"
+13740621,"Alamo Drafthouse @ Vintage Park","29.9947407,-95.572639","114 Vintage Park Blvd, Bldg H, Suite J","Houston","77070","drafthouse.com/houston/vintage_park"
+13750233,"Joybird Houston","29.7425053,-95.4037982","1735 Westheimer Road","Houston","77098","joybird.com"
+13787030,"4411 Montrose Boulevard","29.7331773877551,-95.3910081836735","4411 Montrose Boulevard","Houston","77006","www.4411montrose.com"
+13836756,"RockStar Gallery","29.8490266,-95.4966129","5700 NW Central Drive, #160","Houston","77092","stateoftheartshows.com/rockstar-art-gallery/"
+13840831,"Allen's Landing Park","29.764137,-95.3587599","1005 Commerce Street","Houston","77002","buffalobayou.org/visit/destination/allens-landing/"
+13867922,"Sean Anthony Salons","29.7297486,-95.4788522","3300 Chimney Rock Road","Houston","77056",NULL
+13921863,"3517 Irvington Boulevard","29.792525,-95.3635007","3517 Irvington Boulevard","Houston","77009",NULL
+13926907,"Russ Pitman Park","29.700647,-95.451296","7112 Newcastle Street","Bellaire","77401","www.naturediscoverycenter.org"
+13936768,"White Oak Bayou","29.8203173,-95.4493119","TC Jester Boulevard @ Tidwell Road","Houston","77091","en.wikipedia.org/wiki/White_Oak_Bayou"
+13952082,"Inman Gallery","29.7369951,-95.380541","3901 Main Street","Houston","77002","www.inmangallery.com"
+13956511,"MAS Alternative Exhibition Space","29.7752312857143,-95.3762571836735","1824 Spring Street","Houston","77007",NULL
+13965105,"El Dorado Ballroom","29.7347976530612,-95.3657457142857","2310 Elgin Street","Houston","77004",NULL
+13988569,"The Tipping Point","29.755338122449,-95.3663085102041","1212 Main Street","Houston","77002","www.thetippingpointstore.com"
+14020589,"A Healing Collective","29.7046635,-95.4466197","4231 Bellaire Boulevard","Houston","77025","ahealingcollective.com"
+14055130,"Visionary Heights","29.7952229,-95.4081331","1331 Nicholson Street","Houston","77008","visionaryheights.com"
+14058025,"Hermann Park Conservancy","29.720849,-95.3888729","6201-A Golf Course Drive","Houston","77030","www.hermannpark.org"
+14088458,"G Spot Gallery Houston","29.7869427,-95.3946265","310 East 9th Street","Houston","77008","www.ggalleryhouston.com"
+14097036,"Micro Scope Project","29.7753797,-95.3766764","1824 Spring Street","Houston","77007",NULL
+14132823,"Vanishing Point Cafe","29.3058385,-94.7927191","2411 Grand Street","Galveston","77550",NULL
+14153503,"Glassell School of Art","29.727243,-95.3927491","5101 Montrose Boulevard","Houston","77006","www.mfah.org"
+14173671,"URBN Dental Midtown","29.739495,-95.3814217","3510 Main Street Suite E","Houston","77002","www.urbndental.com"
+14182952,"The Beer Can House","29.7637822,-95.4190711","222 Malone Street","Houston","77007","www.orangeshow.org/beercan.html"
+14185711,"Sidewalks around City Hall","29.7603571,-95.3693747","901 Bagby Street","Houston","77009",NULL
+14199188,"Octavia Art Gallery","29.737805,-95.435799","3637 West Alabama Street, Suite 120","Houston","77027","www.octaviaartgallery.com"
+14207979,"Bill's Junk","29.7909195510204,-95.3872143061224","1125 East 11th Street","Houston","77009","www.billdavenport.com/junkstore/junkstore.html"
+14221280,"Art League Houston","29.7507561428571,-95.3919823877551","1953 Montrose Boulevard","Houston","77006","www.artleaguehouston.org"
+14224768,"JP Morgan Chase","29.7246365,-95.3905619","712 Main Street","Houston","77002",NULL
+14232958,"Design Within Reach","29.7531665,-95.40676975","1956 West Gray Street","Houston","77019","www.dwr.com"
+14258737,"Spring Street Studios","29.7752312857143,-95.3762571836735","1824 Spring Street","Houston","77007",NULL
+14274438,"Gerald D. Hines Waterwall Park","29.737804,-95.460759","2800 Post Oak Boulevard","Houston","77056","www.uptown-houston.com/news/page/water-wall-park"
+14312615,"Contemporary Art Gallery (Houston Baptist University)","29.6929877,-95.5147577","7502 Fondren Road","Houston","77074","www.hbu.edu/About-HBU/The-Campus/Facilities/University-Academic-Center/UAC-Art-Gallery.aspx"
+14330106,"Foltz Fine Art","29.7424664,-95.4125566","2143 Westheimer Road","Houston","77098","www.reavesart.com/index.php"
+14336347,"219 Stratford Street","29.7467766,-95.3868703","219 Stratford Street, Apt B","Houston","77006",NULL
+14369173,"Rice University Art Gallery (Rice University)","29.7184003,-95.3981109","6100 Main Street, 352 Sewall Hall","Houston","77005","www.ricegallery.org"
+14381185,"Salem Evangelical Lutheran Church","29.670942,-95.463539","4930 West Bellfort Boulevard","Houston","77035",NULL
+14497201,"San Jacinto College Central Gallery (San Jacinto College Central)","29.661066,-95.112183","8060 Spencer Highway, Building C4, Room 119","Pasadena","77505",NULL
+14503265,"Summer Street Studios","29.7729894343434,-95.3836425252525","2204 Summer Street","Houston","77007",NULL
+14603859,"The Black Box (San Jacinto College South)","29.6040443,-95.2284853","13735 Beamer Road","Houston","77089","www.sanjac.edu"
+14632234,"Bisong Art Gallery","29.7674761,-95.3533453","1305 Sterrett Street","Houston","77002",NULL
+14656903,"MegaHost Gallery at Jenni's Noodle House","29.8039832222222,-95.3920183333333","602 East 20th Street","Houston","77008","www.noodlesrule.com"
+14725459,"Dillon Kyle Architects","29.7389504,-95.3998263","1500 West Alabama Street","Houston","77006","www.dkarc.com"
+14735235,"Galveston Art Lending Library","29.3080137,-94.7933802","2002 Avenue B","Galveston","77550",NULL
+14746351,"Galeria Regina","29.734555,-95.402826","1716 Richmond Avenue","Houston","77098","www.galeriaregina@comcast.net"
+14752811,"1716 W Main Street","29.7362964,-95.4048903","1716 West Main Street","Houston","77098",NULL
+14806627,"Curation Myth Ministries (Box 13 Art Space)","29.737428,-95.30817","6700 Harrisburg Boulevard","Houston","77011","curationmyth.blogspot.com"
+14807606,"DesignWorks Gallery","29.3049139,-94.792005","2119A Postoffice Street","Galveston","77550","www.designworks-gallery.com"
+14834432,"Winston Contemporary Art","29.7273762,-95.4182755","2426 Bartlett Street, Suite D","Houston","77098","wcahouston.com"
+14834996,"Bohemeo's","29.7347805,-95.3314365","708 Telephone Road, Suite E","Houston","77023","www.bohemeos.com/index.html"
+14858902,"Goldesberry Gallery","29.7347647755102,-95.4190644081633","2625 Colquitt Street","Houston","77098","www.goldesberrygallery.com"
+14864515,"Alliance Gallery (Houston Arts Alliance)","29.759979,-95.400484","3201 Allen Parkway","Houston","77019","www.houstonartsalliance.com/space125gallery/"
+14867376,"Heidi Vaughan Fine Art","29.7344352,-95.4200898","3510 Lake Street","Houston","77098","vaughanmasonfineart.com"
+14874129,"Sculptureworx Studio","29.7729894343434,-95.3836425252525","2500 Summer Street","Houston","77007",NULL
+14948530,"Sugar Land Art Center & Gallery","29.627099,-95.6068382","104 Industrial Boulevard, Suite Q","Sugar Land","77478","www.sugarlandartcenter.org"
+14980473,"The African American Library at the Gregory School","29.753987,-95.380559","1300 Victor Street","Houston","77019","www.thegregoryschool.org/index.html"
+14985197,"1612 Winbern Street","29.7352328367347,-95.3742086326531","1612 Winbern Street","Houston","77004",NULL
+15022315,"Bank of America Center","29.760701,-95.36591","700 Louisiana Street","Houston","77002",NULL
+15023014,"Intexure","29.7243695376884,-95.3803792663317","1815 Southmore Boulevard","Houston","77004",NULL
+15040341,"Serrano Gallery","29.771201,-95.378811","2000 Edwards Street, Suite 317","Houston","77007",NULL
+15059868,"Bayou City Art Festival Memorial Park","29.7589382,-95.3676974","6501 Memorial Drive","Houston","77007","www.bayoucityartfestival.com"
+15070720,"Catalina Coffee","29.768059,-95.380667","2201 Washington Avenue","Houston","77007",NULL
+15075089,"UP Art Studio","29.8092023877551,-95.3900136938775","6521 North Main Street","Houston","77009","www.facebook.com/UpArtStudio"
+15094523,"TEA+ART","29.8031289,-95.415163","815 1/2 West 19th Street","Houston","77008","teaplusart.com"
+15100653,"Gallery 1724","29.7257621020408,-95.4024854489796","1724 Bissonnet Street","Houston","77005","www.gallery1724.blogspot.com"
+15103540,"Ripcord","29.748245,-95.389507","715 Fairview Street","Houston","77006","ripcord.bar"
+15123524,"College Art Gallery (HCC Northline)","29.8326408021978,-95.3760340989011","8001 Fulton Street","Houston","77022","northeast.hccs.edu"
+15128836,"1019 Commerce Street","29.7638115,-95.3607752","1019 Commerce Street","Houston","77002",NULL
+15135635,"The Art Guys Convention Center","29.8493658633252,-95.4231187030828","5757 Knox Street","Houston","77091","www.theartguys.com/artfair.html"
+15141597,"Dean Day Gallery","29.734733,-95.419673","2639 Colquitt Street","Houston","77098","www.deandaygallery.com"
+15141726,"Jesse H. Jones Building (Houston Public Library)","29.759431,-95.3721417","500 McKinney Street","Houston","77002","houstonlibrary.org/location/central-library-jesse-h-jones-building"
+15195508,"The Home of Hannah and David Jans","29.716621,-95.309771","6728 Sylvan Street","Houston","77023",NULL
+15218974,"The Continental Club","29.7384755,-95.3797861","3700 Main Street","Houston","77002","www.continentalclub.com/Houston.html"
+15231492,"Cherie Flores Garden Pavilion","29.7207922,-95.3864133","1500 Hermann Drive","Houston","77004","www.hermannpark.org/poi/139/"
+15272424,"Mid Main, 3600-3700 Block of Main Street","29.7246365,-95.3905619","3600 Main Street","Houston","77002",NULL
+15279154,"D-Vine Salon & Spa","29.7423846,-95.4129493","2147 Westheimer Road","Houston","77098","www.d-vinehouston.com"
+15297319,"Black Swan Screen Printing","29.7755232,-95.3767088","1824 Spring Street, #103","Houston","77007","www.blackswanscreenprinting.com"
+15322290,"Chinelli La Fratta Gallery","29.7736166326531,-95.3761267142857","1813 Crockett Street","Houston","77007",NULL
+15346963,"The Kenmore (Box 13 ArtSpace)","29.7372928,-95.3081826","6700 Harrisburg Boulevard, 1st Floor","Houston","77011","www.the-kenmore.blogspot.com"
+15370206,"Russian Cultural Center - Our Texas","29.7254556122449,-95.4136507959184","2337 Bissonnet Street","Houston","77005","www.ourtx.org"
+15396114,"Texas Art Asylum","29.7432178979592,-95.3554359795918","1719 Live Oak Street","Houston","77003","www.texasartasylum.com"
+15425986,"Hermann Park Golf Course","29.7137074,-95.3819023","2155 North Macgregor Drive","Houston","77004","www.hermannparkgc.com"
+15459304,"MFA Contemporary @ Heights Mercantile","29.7839751,-95.4006431","714 Yale Street, #1K","Houston","77007","www.mfah.org/programs/families/mfa-contemporary-heights-mercantile/"
+15500881,"Vox Culture Warehouse","29.7774055,-95.4110918","8570 Katy Freeway","Houston","77007","voxculturehouston.org"
+15506325,"Central Art Gallery (HCC Central)","29.7375592857143,-95.3750667755102","3517 Austin Street","Houston","77004","ccollege.hccs.edu/instru/fineart/art.htm"
+15512352,"MECA","29.76631,-95.377274","1900 Kane Street","Houston","77007",NULL
+15552746,"Makerspace","29.750248,-95.337592","100 Hutcheson Street","Houston","77003",NULL
+15580631,"Eleanor Tinsley Park","29.7589382,-95.3676974","18-3600 Allen Parkway","Houston","77019",NULL
+15609665,"Jonathan Hopson Gallery","29.7398926,-95.3925145","904 Marshall Street","Houston","77006","jonathanhopsongallery.com"
+15676471,"Arabia Shrine Center","29.7177627,-95.5558774","10510 Harwin Drive","Houston","77036","www.shriners-houston.org"
+15678416,"Southern Star Brewing Company","30.3584172,-95.4775348","3525 North Frazier Street","Conroe","77303","southernstarbrewing.com"
+15747820,"Numbers","29.744681,-95.38493","300 Westheimer Road","Houston","77006","www.numbersnightclub.com"
+15773159,"Rice University Media Center (Rice University)","29.7184003,-95.3981109","6100 Main Street, MS-125","Houston","77005","arts.rice.edu"
+15797266,"Catherine Couturier Gallery","29.7347642653061,-95.419156244898","2635 Colquitt Street","Houston","77098","www.johnclearygallery.com"
+15817929,"AMC Studio 30","29.73270275,-95.51402371875","2949 Dunvale Road","Houston","77063",NULL
+15823095,"Brown Auditorium Theater (MFAH)","29.7256798,-95.3904825","1001 Bissonnet Street","Houston","77005",NULL
+15830094,"The Sculpture Workshop Houston","29.7743316868687,-95.4012067272727","4020 Koehler Street","Houston","77007","thesculptureworkshop.com"
+15837282,"Jenner House","29.7757734081633,-95.3538863877551","1619 Chapman Street","Houston","77009",NULL
+15853279,"Rotunda Gallery (St. Luke's Methodist Church)","29.741074,-95.4351766","3471 Westheimer Road","Houston","77027","www.stlukesmethodist.org/music-fine-arts/"
+15882381,"Alonzo Gallery","29.7384017,-95.3799932","3710 Main Street","Houston","77002","www.facebook.com/alonzogallery"
+15893567,"Bogan Gallery","29.3046639,-94.7929838","2217 Postoffice Street","Galveston","77550","www.bogangallery.com"
+15901858,"Avant Garden","29.74432895,-95.3864724744559","411 Westheimer Road","Houston","77006","avantgardenhouston.com/arts.html"
+15902093,"Daniel Sandoval Contemporary","29.7908041428571,-95.3960782653061","223 East 11th Street","Houston","77008","www.danielsandovalcontemporary.com"
+15938756,"space125gallery (Houston Arts Alliance)","29.759979,-95.400484","3201 Allen Parkway","Houston","77019","www.haatx.com"
+15967180,"Aurora Picture Show","29.8097397906977,-95.3893475116279","800 Aurora Street","Houston","77009","www.aurorapictureshow.org"
+15997428,"O'Kane Gallery (UHD)","29.766005,-95.3591542","1 Main Street","Houston","77002",NULL
+16012922,"Public Art of the University of Houston System (UH)","29.7188527,-95.3432109","4800 Calhoun Road","Houston","77204","publicartuhs.org"
+16024616,"Houston Ship Channel: Santa Anna Capture Site","29.5659005,-95.0448267","3194-3198 Washburn Tunnel","Pasadena","77586",NULL
+16083807,"Cullen Performance Hall (UH)","29.7202399,-95.3431911","4800 University Drive","Houston","77004","www.uh.edu/cullen-performance-hall"
+16087176,"Bermac Arts","29.7346417,-95.3798594","4101 San Jacinto Street","Houston","77004","www.facebook.com/bermac.arts"
+16101814,"Houston Re-Market","29.7433300408163,-95.3745276938776","2850 Fannin Street","Houston","77002",NULL
+16104638,"The Solar Studios (Rice University)","29.7140486,-95.408227","6100 Main Street, Alumni Drive @ College Way","Houston","77030",NULL
+16154360,"Landmark River Oaks Theater","29.7529685217391,-95.4086373478261","2009 West Gray Street","Houston","77019","www.landmarktheatres.com/market/houston/riveroakstheatre.htm"
+16187108,"Texas Children’s Hospital","29.7070666,-95.4045123","6701 Fannin Street","Houston","77030","www.texaschildrens.org"
+16190209,"Tony’s Corner Pocket","29.7575561,-95.379005","817 West Dallas Street","Houston","77019","www.facebook.com/tonyscornerpocket/"
+16193029,"The Mission","29.7331773877551,-95.3910081836735","4411 Montrose Boulevard","Houston","77006","themissionprojects.com. "
+16198179,"White Linen Night in the Heights","29.8029356,-95.3992399","200 & 300 Block of West 19th Street","Houston","77008","whitelinennightheights.com"
+16233188,"4203 Rusk Street","29.7433706,-95.3377198","4203 Rusk Street","Houston","77023",NULL
+16261516,"Houston Community College Building (HCC)","29.7416605,-95.3770902","3100 Main Street","Houston","77002","www.hccs.edu/portal/site/hccs"
+16285728,"Legacy Community Health Fifth Ward Clinic","29.775976,-95.3340024","3811 Lyons Avenue","Houston","77020",NULL
+16305717,"1711 West Main","29.73578,-95.4046937","1711 West Main Street","Houston","77098",NULL
+16399049,"Silver Street Studios","29.7712177,-95.3790448","2000 Edwards Street","Houston","77007","home.fotofest.org"
+16431379,"Self Actualization","29.7483354,-95.3409688","3401 Harrisburg Boulevard","Houston","77003","www.selfactualizationtx.com"
+16441946,"Jack Rabbit Gallery","29.811096,-95.3984139","228 East 27th Street","Houston","77008",NULL
+16452244,"1515 Ashland Street","29.798669,-95.4060347","1515 Ashland Street","Houston","77008",NULL
+16476113,"Letter F Check Up Show","29.7450802653061,-95.3770132244898","2808 Milam Street","Houston","77006",NULL
+16518064,"Black Heritage Gallery","29.7215043061225,-95.3793024489796","5408 Almeda Drive","Houston","77004",NULL
+16533364,"The Doshi House Cafe","29.7332114545455,-95.3659181818182","3419 Dowling Street","Houston","77004",NULL
+16545239,"SKYDIVE","29.7324890808081,-95.4095063030303","2041 Norfolk Street","Houston","77098","www.theskydive.org"
+16545853,"Cha Champagne and Wine Bar","29.7585163,-95.3985743","810 Waugh Drive, No. 100","Houston","77019",NULL
+16645125,"La Colombe d'Or Fine Art Galleries","29.7636155,-95.3622108","108 Main Street, 2nd Floor","Houston","77002",NULL
+16651951,"Kingspoint Graffiti Mecca & Art Space AKA The Mullet","29.6202632631579,-95.2286167894737","10902 Kingspoint Road","Houston","77075","www.facebook.com/kingspointmullet"
+16696483,"2808 Rice Boulevard","29.7176104,-95.424884","2808 Rice Boulevard","Houston","77005",NULL
+16720817,"Design Within Reach","29.7420978,-95.4471454","4066 Westheimer Road","Houston","77027","www.dwr.com"
+16754534,"Mercantile Montrose","29.742834,-95.388243","3321 Stanford Street","Houston","77006","www.mercantilehouston.com"
+16761048,"Earl Staley Studio","29.7444937346939,-95.3746728979592","2711 Main Street","Houston","77002",NULL
