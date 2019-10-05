@@ -1,0 +1,51 @@
+File Manifest for ICPSR 36984
+
+Kushner, Roland J., and Randy Cohen. Local Arts Index (LAI), United States,
+2009-2015. ICPSR36984-v1. Ann Arbor, MI: Inter-university Consortium for
+Political and Social Research [distributor], 2018-03-02.
+http://doi.org/10.3886/ICPSR36984.v1
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    36984-descriptioncitation.pdf       -       -         -       2018-04-24  -
+
+    36984-related_literature.txt        -       -         -       daily       -
+
+    36984-manifest.txt                  -       -         -       daily       -
+
+
+DS0001 Local Arts Index (LAI), United States, 2009-2015
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    36984-0001-Codebook.pdf             -       -         -       2018-03-02  2d4b6e676f89b865c375b713a4c5d5e4
+
+    36984-0001-Data.dta                 -       3,146     147     2018-03-02  430e3b8d2a25f77d2a58ddfd6fa57304
+
+    36984-0001-Data.rda                 -       3,146     147     2018-03-02  9e674cbde580d2c8c52d0c749ab55766
+
+    36984-0001-Data.sav                 -       3,146     147     2018-03-02  37db54a800b3102e05effc4e335c871b
+
+    36984-0001-Data.stc                 -       3,146     147     2018-03-02  231e99ba25a6db015b42dff91f93a359
+
+    36984-0001-Data.tsv                 -       3,146     147     2018-03-02  a2d9e783e985542e53805df269070008
+
+    36984-0001-Data.txt                 1340    3,146     147     2018-03-02  4b1925e46ff95134c7c01da7acdb66fb
+
+    36984-0001-Data.xlsx                -       3,146     147     2018-03-02  ef664dca4665cdb466fcd132107326a9
+
+    36984-0001-Documentation.pdf        -       -         -       2018-03-02  d8781e2299d3fe3e2d5ff9705fe7db33
+
+    36984-0001-Setup.dct                -       -         -       2018-03-02  2add6a979b37f47e0af460e18f43a72b
+
+    36984-0001-Setup.do                 -       -         -       2018-03-02  36427697999556d7b53a3dbdad3726f5
+
+    36984-0001-Setup.sas                -       -         -       2018-03-02  23c0bf785f1db7bc3b6084b626b0908f
+
+    36984-0001-Setup.sps                -       -         -       2018-03-02  d426d7bb93021c6ed6b029ef23d4086a
+
