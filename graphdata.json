@@ -7,7 +7,8 @@
     {"id": "artist-13631107", "group": 1},
     {"id": "venue-10137684", "group": 2},
     {"id": "venue-13371986", "group": 2},
-    {"id": "venue-5231713", "group": 2}
+    {"id": "venue-5231713", "group": 2},
+    {"id": "venue-59280", "group": 2}
   ],
   "links": [
     {"source": "artist-16459675", "target": "venue-10137684", "value": 1},
