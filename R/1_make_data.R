@@ -2,10 +2,14 @@ library(dplyr)
 library(tidyr)
 library(lubridate)
 library(jsonlite)
+library(data.table)
 
 "https://coolors.co/f4e8c1-a0c1b9-70a0af-706993-331e38"
 
+dat <- fread('build/dat.csv')
+
 graph_dat <- dat %>% 
+ filter(end_date > ymd('2017-01-01')) %>%
  select(venue_uid, artist_uid) %>%
  group_by(venue_uid, artist_uid) %>%
  summarize(num_visits=n()) %>%
