@@ -86,6 +86,13 @@
 	   			color:gray;
 	        	font-weight: normal;
 	        }
+	        .textblocks {
+				margin-left: 1em;
+				margin-right:1em;
+	        }
+	        /*h4.textblocks {
+	        	color:white;
+	        }*/
 		</style>
 
     </head>
@@ -111,8 +118,7 @@
 		<div class="wrapper demo">
 		  <div><a style="color:white;text-decoration: none;"href="#artist" >Artist Statement</a></div>
 		  <div><a style="color:white;text-decoration: none;" href="#data">About the data</a></div>
-		  <div><a style="color:white;text-decoration: none;" href="#approach">About the Approach</a></div>
-		  <div><a style="color:white;text-decoration: none;" href="#organizer">Hackathon Organizer</a></div>
+		  <div><a style="color:white;text-decoration: none;" href="#organizer">The Hackathon</a></div>
 		  <div><a style="color:white;text-decoration: none;" href="#tech">Tech Stack</a></div>
 		</div>
 		
@@ -121,22 +127,31 @@
 		  <div class="media-body">
 		    <h2 class="media-heading description_header" style="margin-bottom:2em;margin-top:1em">Spatial Distribution</h2>
 		     <h3 class="media-heading description">Hypothesis</h3>
-		    <p class="description">Something Something spatial distribution is what I thought I'd see.</p>
-		    <h3 class="media-heading description">Science Observations (left): </h3>
-		    <p class="description">Something Something spatial distribution is what I thought I'd see.</p>
-		    <h3 class="media-heading description">Art Observations (right): </h3>
-		    <p class="description">Something Something spatial distribution is what I thought I'd see.</p>
+		    <p class="description">Are there science and art deserts or do they mirror population alone?</p>
+		    <h3 class="media-heading description">Art Observations (l): </h3>
+		    <p class="description">There is wider distribution than I would have thought. The extent of distribution between science and art isn't that different</p>
+		    <h3 class="media-heading description">Science Observations (r): </h3>
+		    <p class="description">Given Houston is known for certain industries (oil, NASA, health) I thought to see more clustering around the areas most known for that.</p>
 		    <h3 class="media-heading description" style="margin-top:2em">What Questions Do These Observation Bring Up? </h3>
-		    <p class="description">Something Something spatial distribution is what I thought I'd see.</p>
+		    <p class="description">With this plot, you mostly see geographic extent. What are density of events/jobs where the dots overlap? That is hard to see from this.</p>
 		  </div>
 		</div>
 
 		<div class="media">
-			<div class="media-body">
-			    <h3 class="media-heading description">Easier to see here the central concentration</h3>
-			    <p class="description">Something Something spatial distribution is more spread out in Science jobs and more concentrated with art positions.</p>
-		  	</div>
-		  <iframe src="hexagon_sciAndArt_save_v3.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="1100px" allowfullscreen></iframe>
+				<div class="media-body">
+				    <h2 class="media-heading description_header" style="margin-bottom:2em;margin-top:1em">Spatial Density</h2>
+				     <h3 class="media-heading description">Hypothesis</h3>
+				    <p class="description">There would be a single art cluster & maybe 3 science (health, oil, space)</p>
+				    <h3 class="media-heading description">Art Observations (l): </h3>
+				    <p class="description">There is a cluster of highest density of values (and also events!) just south of downtown.</p>
+				    <h3 class="media-heading description">Science Observations (r): </h3>
+				    <p class="description">The clustesr I was expected aren't as dominate as I expected,but there is denser locations just north and west of downtown, which you don't see in art venues. Additionally, you see NASA, which has a lot of science but not much art, saddly. </p>
+				    <h3 class="media-heading description" style="margin-top:2em">What Questions Do These Observation Bring Up? </h3>
+				    <p class="description">This plots makes me wonder what companies employ scientists in multiple places and what venues have the most shows!</p>
+			  	</div>
+			<iframe src="hexagon_sciAndArt_save_v3.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="1100px" allowfullscreen></iframe>  	
+		</div>
+		  
 		  
 		</div>
 
@@ -169,28 +184,58 @@
 	</div>
 	<div style="width:33%"></div>
 
-	<div id="artist" class="wrapper" style="color:gray">
-			<div style="text-align: center;">
-				<h2 style="">Artist Statement</h2>
-				<p>THIS IS SOME TEXT</p>
+	<div id="artist" class="wrapper textblocks" style="color:gray">
+			<div style="text-align: left;">
+				<h2 style="color:white">Artist Statement</h2>
+				<div style="text-align: left">
+					<h4 style="color:white">Background</h4>
+					<p>In late 2017, I got curious about the spatial distribution of where Science takes place in Houston. I couldn't find any maps or databases already created, so I attempted to figure out if I could generate a dataset from sources meant for a different purpose. I eventually settled on job advertisements. Although there isn't a flag on any site for "science jobs", I was able to find a list of terms associated with science jobs. I wrote a program to scrape job advertisements that a search returned when using words from that list of >100 science associated words. I got ~5000 results. However, the results were very very messy with a lot of false positives. Just one example, most "satellite" jobs are at "satellite locations, nothing to do with making satellites! Due to limited time and the difficulity cleaning through a large number of text descriptions, the project got put on the shelf (on github).</p>
+					<p>Inspired by the idea of spatially understanding Art in Houston, I decied to bring that dataset back out, clean it, and see if I could analyze both datasets the same way.</p>
+					<h4 style="color:white">Machine-learning to assist in data cleaning</h4>
+					<p>To start out, I labeled 1200 jobs as either "true" or "false" for actually being a science job. I think generated a Machine Learning model (random forest) to take my labeled data and use that to predict which ones of other job descriptions were real or not.</p>
+					<h4 style="color:white">Goals for the project</h4>
+					<p>1. Be able to analyze both the science dataset and the art dataset in identical or similar ways. I wanted to let the combination of the two drive the style of my analysis.</p>
+					<p>2. Wanted the appearance to have a visual theme.</p>
+					<p>3. Wanted to have finished product be live and editable on the web.</p>
+					<p>4. Wanted to be in a place where the general public could further explore the data and ask their own questions.</p>
+				</div>
 			</div>
 		</div>
-		<div id="data" class="wrapper" style="color:gray">
+		<div id="data" class="wrapper textblocks" style="color:gray">
 			<div style="text-align: center;">
-				<h2 style="">About the Data</h2>
-				<p>THIS IS SOME TEXT</p>
+				<h2 style="text-align: left;color:white">About the Data</h2>
+				<p style="text-align: left;">You can find more information about the generation and cleaning of the Science job dataset I created <a href="https://github.com/JustinGOSSES/HoustonScienceCity">on its original github repository</a></p>
+				<p style="text-align: left;">You can find more information about the art venue dataset provided by Glasstire  <a href="http://www.glasstiredatahack.com">on this site for the hackathon</a> or on their main <a href="https://glasstire.com">Glasstire website.</a></p>
 			</div>
 		</div>
-		<div id="organizer" class="wrapper" style="color:gray">
-			<div style="text-align: center;">
+		<div id="organizer" class="wrapper textblocks" style="color:gray">
+			<div style="text-align: left;color:white">
 				<h2 style="">About the Organizer</h2>
-				<p>THIS IS SOME TEXT</p>
+				<p style="text-align: left;color:gray">Glasstire, being the online publication for art in Texas for 18 years, has compiled a unique dataset of art venues thrhougout Houston. The Glasstire DataHack asked participants to search for insights and visualizations.</p>
 			</div>
 		</div>
-		<div id="tech" class="wrapper" style="color:gray">
+		<div id="tech" class="wrapper textblocks" style="color:gray">
 			<div style="text-align: center;">
-				<h2 style="">Tech Stack</h2>
-				<p>THIS IS SOME TEXT</p>
+				<h2 style="text-align: left;color:white">Tech Stack</h2>
+				<p style="text-align: left;">
+					<ol style="text-align: left;">
+						<li>
+							Kepler.gl (map-based data visualization)
+						</li>
+						<li>
+							Tableau (data manipulation and data visualization)
+						</li>
+						<li>
+							Pandas (data manipulation & cleaning)
+						</li>
+						<li>
+							HTML, CSS, JS (web developement)
+						</li>
+						<li>
+							Scikit-learn (machine-learning)
+						</li>
+					</ol>
+				</p>
 			</div>
 		</div>
 
