@@ -2,13 +2,18 @@
   "nodes": [
     {"id": "artist-16459675", "group": 1},
     {"id": "artist-15368376", "group": 1},
+    {"id": "artist-1531510", "group": 1},
     {"id": "artist-3079814", "group": 1},
+    {"id": "artist-13631107", "group": 1},
     {"id": "venue-10137684", "group": 2},
-    {"id": "venue-13371986", "group": 2}
+    {"id": "venue-13371986", "group": 2},
+    {"id": "venue-5231713", "group": 2}
   ],
   "links": [
     {"source": "artist-16459675", "target": "venue-10137684", "value": 1},
     {"source": "artist-15368376", "target": "venue-13371986", "value": 1},
-    {"source": "artist-3079814", "target": "venue-13371986", "value": 1}
+    {"source": "artist-3079814", "target": "venue-13371986", "value": 1},
+    {"source": "artist-1531510", "target": "venue-59280", "value": 1},
+    {"source": "artist-13631107", "target": "venue-5231713", "value: 13}
   ]
 }
