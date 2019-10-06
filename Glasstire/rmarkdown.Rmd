@@ -1,0 +1,774 @@
+---
+title: "Glasstire Datahack 2019"
+author: "Ivan Leung"
+theme: united
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+library(tidyverse)
+library(lubridate)
+library(DataExplorer)
+library(rgdal)
+library(tidycensus)
+library(leaflet)
+library(tidytext)
+library(tsibble)
+library(fable)
+
+# setwd("./glasstire-datahack")
+source("../script/glasstire_hackathon_util.R")
+
+# fxn ---------------------------------------------------------------------
+
+options(tigris_use_cache = TRUE)
+
+GetCensusData <- function(.year, series = "B02001_001") {
+  get_acs(geography = "zcta", variables = series, geometry = FALSE, year = .year)
+}
+
+SafeGetCensusData <- possibly(GetCensusData, otherwise = NA)
+
+FilterZip <- function(data, col, values = zip_ls) {
+  data %>% 
+    filter({{col}} %in% values)
+}
+
+SafeFilterZip <- possibly(FilterZip, otherwise = NA)
+
+CountUnique <- function(data, ...) {
+  data %>% 
+    distinct(event_uid, .keep_all = TRUE) %>% 
+    count(...) %>% 
+    arrange(desc(n))
+}
+
+KableNeat <- function(x, ...) {
+  
+  df <- data.frame(x)
+  
+  kableExtra::kable(df, ...) %>% 
+    kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed", 
+                                        "responsive"), full_width = FALSE)
+}
+
+```
+
+## Data Exploration
+
+Data are provided by [Glasstire Datahack 2019](https://www.glasstiredatahack.com/){target="_blank"}.
+
+A sample of the raw data are shown below.
+
+```{r read}
+
+event_raw <- read_csv("events.csv")
+
+venue_raw <- read_csv("venues.csv")
+
+art_raw <- read_csv("event_artists.csv")
+
+merge_raw <- reduce(list(event_raw, venue_raw, art_raw), left_join)
+
+KableNeat(head(merge_raw))
+```
+
+In the data exploration phase, several data issues were seen:
+
+- `start_date` values later than `end_date`
+
+- in `coordinates` column, more than 2 values (separated by `,`) were entered
+
+- inconsistent capitalization of `city` names
+
+These issues were corrected.
+
+Further, time attributes (e.g., year, day of week, season) were created to aid in time series analysis downstream.
+
+A sample of the cleaned data are shown below.
+
+```{r explore}
+merge_clean <- merge_raw %>% 
+  rowwise() %>% 
+  mutate(start_dt = if_else(start_date > end_date, end_date, start_date)) %>%
+  mutate(end_dt = if_else(end_date < start_date, start_date, end_date)) %>% 
+  mutate(event_duration = as.integer(end_dt - start_dt) + 1) %>% 
+  mutate(city = str_to_lower(city)) %>%
+  mutate(zip = as.integer(zip)) %>% 
+  # row 2001 has extra value in coordinates
+  separate(coordinates, c("lat", "lon"), sep = ",", extra = "drop")
+
+merge_season <- merge_clean %>%
+  mutate(
+    event_mth_lbl = month(start_dt, label = TRUE),
+    event_mth = month(start_dt, label = FALSE),
+    event_year = year(start_dt),
+    event_wday_lbl = wday(start_dt, label = TRUE),
+    event_wday = wday(start_dt, label = FALSE),
+    season = case_when(
+      between(event_mth, 6, 8) ~ "summer",
+      between(event_mth, 9, 11) ~ "fall",
+      between(event_mth, 3, 5) ~ "spring",
+      TRUE ~ "winter"
+    )
+  )
+
+zip_ls <- unique(merge_season$zip)
+
+merge_season %>% 
+  head() %>% 
+  select(event_uid, venue, lat, lon, start_dt, event_year, event_mth_lbl, event_wday_lbl,
+         season) %>% 
+  KableNeat()
+```
+
+## Event Distributions
+
+### When Do Events Happen?
+
+Data filtered to 2018 and top 10 by event count.
+
+```{r network-plot-when}
+
+# top 10 zip by event count
+top_10_zip <- merge_season %>% 
+  CountUnique(zip) %>% 
+  top_n(10, n)
+
+# avoid double counting where one event has multiple artists
+merge_unique_event <- merge_season %>% 
+  distinct(event_uid, .keep_all = TRUE) %>% 
+  inner_join(distinct(top_10_zip, zip)) %>% 
+  mutate_at(vars(event_year, zip), as.character) %>% 
+  filter(event_year == 2018)
+
+merge_unique_event %>%
+  PrepSankey(event_year, event_mth_lbl) %>%
+  arrange(target) %>%
+  bind_rows(merge_unique_event %>%
+              PrepSankey(event_mth_lbl, event_wday_lbl)) %>%
+  bind_rows(merge_unique_event %>%
+              PrepSankey(event_wday_lbl, zip)) %>%
+  SankeyPlot()
+```
+
+### Seasonal Variation
+
+As shown, summer seems to be marked by lower event count.
+
+```{r network-plot-season}
+zip_ls <- unique(merge_season$zip)
+
+# top 10 zip by event count
+top_10_zip <- merge_season %>% 
+  CountUnique(zip) %>% 
+  top_n(10, n)
+
+# avoid double counting where one event has multiple artists
+merge_unique_event <- merge_season %>% 
+  distinct(event_uid, .keep_all = TRUE) %>% 
+  inner_join(distinct(top_10_zip, zip)) %>% 
+  mutate_at(vars(event_year, zip), as.character) %>% 
+  filter(event_year == 2018)
+
+merge_unique_event %>%
+  PrepSankey(event_year, season) %>%
+  arrange(target) %>%
+  bind_rows(merge_unique_event %>%
+              PrepSankey(season, event_wday_lbl)) %>%
+  bind_rows(merge_unique_event %>%
+              PrepSankey(event_wday_lbl, zip)) %>%
+  SankeyPlot()
+```
+
+### Where Do Event Happens?
+
+```{r network-plot-where}
+# top 10 venue by event count
+top_10_venue <- merge_season %>% 
+  CountUnique(venue) %>% 
+  top_n(10, n)
+
+# avoid double counting where one event has multiple artists
+merge_unique_event <- merge_season %>% 
+  distinct(event_uid, .keep_all = TRUE) %>% 
+  inner_join(distinct(top_10_venue, venue)) %>% 
+  mutate_at(vars(event_year), as.character) %>%
+  filter(event_year == 2018)
+
+merge_unique_event %>%
+  PrepSankey(event_year, event_mth_lbl) %>%
+  arrange(target) %>%
+  bind_rows(merge_unique_event %>%
+              PrepSankey(event_mth_lbl, event_wday_lbl)) %>%
+  bind_rows(merge_unique_event %>%
+              PrepSankey(event_wday_lbl, venue)) %>%
+  SankeyPlot()
+```
+
+### Which Artist Are Most Active?
+
+It seems artists come and go, as data show that artists who are among the top host (by event count) no longer have any events in recent years.
+
+```{r network-plot-who}
+# top 10 venue by event count
+top_10_art <- merge_season %>% 
+  filter(event_year == 2018) %>% 
+  # filter_at(vars(artist_uid), any_vars(!is.na(.))) %>% 
+  CountUnique(artist_uid) %>% 
+  head(10)
+
+# avoid double counting where one event has multiple artists
+merge_unique_event <- merge_season %>% 
+  distinct(event_uid, .keep_all = TRUE) %>% 
+  inner_join(distinct(top_10_art, artist_uid)) %>%
+  filter(event_year == 2018) %>% 
+  mutate_at(vars(event_year, artist_uid), as.character) %>% 
+  replace_na(list(artist_uid = "Group Events"))
+
+merge_unique_event %>%
+  PrepSankey(event_year, event_mth_lbl) %>%
+  arrange(target) %>%
+  bind_rows(merge_unique_event %>%
+              PrepSankey(event_mth_lbl, event_wday_lbl)) %>%
+  bind_rows(merge_unique_event %>%
+              PrepSankey(event_wday_lbl, artist_uid)) %>%
+  SankeyPlot()
+```
+
+### Rise and Fall of Artists
+
+Data filtered to artists with ID only.
+
+```{r YoY-change}
+# top_10_2019 <- merge_season %>% 
+#   filter_at(vars(artist_uid), any_vars(!is.na(.))) %>% 
+#   filter(event_year == 2019) %>% 
+#   CountUnique(event_year, artist_uid) %>% 
+#   top_n(10, n)
+# 
+# top_10_2007 <- merge_season %>% 
+#   filter_at(vars(artist_uid), any_vars(!is.na(.))) %>% 
+#   filter(event_year == 2007) %>% 
+#   CountUnique(event_year, artist_uid) %>% 
+#   top_n(10, n)
+  
+artist_yoy_chg <- merge_season %>% 
+  filter_at(vars(artist_uid), any_vars(!is.na(.))) %>% 
+  # filter(event_year %in% c(2016, 2018)) %>% 
+  CountUnique(event_year, artist_uid) %>% 
+  group_by(artist_uid) %>% 
+  arrange(event_year) %>% 
+  # filter(artist_uid == 170349) %>% 
+  mutate(yoy_chg = (n - lag(n)) / n) %>% 
+  # remove 2007 NA yoy_chg
+  filter(!is.na(yoy_chg)) %>% 
+  ungroup() %>% 
+  group_by(event_year) %>% 
+  filter(yoy_chg != 0) %>% 
+  top_n(10, yoy_chg) %>% 
+  ungroup()
+
+artist_yoy_chg %>% 
+  mutate_at(vars(artist_uid), as_factor) %>% 
+  # # filter(event_year == 2012) %>%
+  # # mutate(artist_uid = fct_reorder(artist_uid, n)) %>% 
+  # group_by(event_year) %>% 
+  # # 2. Arrange by
+  # #   i.  facet group
+  # #   ii. bar height
+  # arrange(event_year, n) %>%
+  # # 3. Add order column of row numbers
+  # mutate(order = row_number()) %>% 
+  # mutate(artist_uid = fct_reorder(artist_uid, order)) %>%
+  ggplot(aes(x = reorder_within(artist_uid, yoy_chg, event_year), y = n, fill = artist_uid)) + 
+  facet_wrap(~event_year, drop = TRUE, scales = "free") +
+  geom_col() +
+  scale_x_reordered() +
+  coord_flip() +
+  viridis::scale_fill_viridis(discrete = TRUE) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(title = "Rise and Fall of Artists by Year",
+       subtitle = "Ordered by Year-on-Year Change and Values by Event Count") +
+  xlab("Artist") +
+  ylab("Event Count")
+```
+
+## Event Forecasting
+
+Data filtered to top `zip` codes in 2018, so as to better forecast upcoming events nearing the end of 2019.
+
+```{r}
+# top 10 zip by event count
+top_10_zip <- merge_season %>% 
+  CountUnique(event_year, zip) %>% 
+  filter(event_year >= 2018) %>% 
+  top_n(10, n)
+
+merge_ts <- merge_season %>% 
+  CountUnique(zip, start_dt) %>% 
+  as_tsibble(key = zip, index = start_dt) %>% 
+  group_by_key() %>%
+  summarise(
+    n = sum(n, na.rm = TRUE)
+  ) %>% 
+  tsibble::fill_gaps()
+
+subset_data <- merge_ts %>%
+  inner_join(distinct(top_10_zip, zip)) %>% 
+  mutate(
+    year = year(start_dt),
+    month = month(start_dt),
+    weeks = week(start_dt)
+  )
+
+fit <- subset_data %>% 
+  model(
+    tslm = TSLM(log(n) ~ trend() + season())
+  )
+
+fc <- fit %>%
+  fabletools::forecast(h = 12)
+
+fc %>%
+  mutate(.model = "forecast") %>% 
+  mutate(year = year(start_dt), month = month(start_dt), weeks = week(start_dt)) %>% 
+  ggplot(aes(x = start_dt, y = n, group = .model, colour = .model)) +
+  geom_line() +
+  geom_line(data = subset_data %>% 
+              filter_index("2017" ~ . ),
+            aes(x = start_dt, y = n, group = year, colour = as.factor(year)),
+            inherit.aes = FALSE) +
+  facet_wrap(~zip, drop = TRUE, scales = "free") +
+  theme_minimal() +
+  theme(legend.title = element_blank()) +
+  xlab("Number of Events") +
+  ylab("Date") +
+  labs(title = "Historical and Forecasted Event Count by Zip Code",
+       subtitle = "Select Zip Codes by High Event Count")
+```
+
+## Integrating Census Data
+
+Census data may help enrich overall data set to uncover more insights about why events are distributed the way they are.
+
+Census data considered include:
+
+- Gini Index (i.e. inequality measure)
+
+- Gender
+
+- Employment
+
+- Median Income
+
+- Computer/Internet Access
+
+- Race
+
+- Education Level
+
+- Household size
+
+Blended data are aggregated on a year level, by `zip`.
+
+```{r, eval=FALSE}
+census_data_raw <- read_rds("census_data_raw.rds")
+
+census_edu_raw <- census_data_raw[[1]] %>% 
+  mutate(label = str_remove_all(label, "Estimate!!Total!!"))
+census_emp_raw <- census_data_raw[[2]] %>% 
+  mutate(label = str_remove_all(label, "Estimate!!Total!!|In labor force!!Civilian labor force!!"))
+
+census_gini_raw <- census_data_raw[[3]] %>% 
+  mutate(label = str_remove_all(label, "Estimate!!|Total!!|In labor force!!Civilian labor force!!"))
+
+census_house_size_raw <- census_data_raw[[4]] %>% 
+  filter(str_detect(label, '\\d+')) %>% 
+  mutate(label = str_remove_all(label, "Estimate!!Total!!|households!!|households!!|household") %>% 
+           str_squish)
+
+census_internet_raw <- census_data_raw[[5]] %>% 
+  filter(str_detect(label, 'Computer|Internet')) %>% 
+  mutate(label = str_remove_all(label, "Estimate!!Total") %>% 
+           str_squish)
+
+census_race_raw <- census_data_raw[[6]] %>% 
+  mutate(label = str_remove_all(label, "Estimate!!Total|!!") %>% 
+           str_squish)
+
+census_sex_age_raw <- census_data_raw[[7]] %>% 
+  mutate(label = str_remove_all(label, "Estimate!!Total!!") %>% 
+           str_squish)
+
+census_sex_earning_raw <- census_data_raw[[8]] %>% 
+  mutate(label = str_remove_all(label, "Estimate!!|in the past 12 months \\(in 2017 inflation-adjusted dollars\\)!!") %>% 
+           str_squish)
+```
+
+```{r}
+# drop census_data_raw
+# census_data_ls <- ls()[str_detect(ls(), 'census_\\w+_raw')][-1] %>% 
+#   as.list() %>% 
+#   map(get) %>% 
+#   bind_rows() %>% 
+#   mutate(data = map(data, ~SafeFilterZip(.x, GEOID))) %>% 
+#   filter(map_int(data, length) > 1) %>% 
+#   unnest(data)
+
+census_data_ls <- read_rds("census_data_ls_clean.rds")
+```
+
+
+```{r census-data, eval=FALSE}
+# list variables available in census data
+v17 <- load_variables(2017, "acs5", cache = TRUE)
+
+# https://datalab.h-gac.com/reference/censusacs2017/main.html
+# https://www.h-gac.com/census-data/default.aspx
+# https://datalab.h-gac.com/reference/censusacs2017/zip_75852/table_list_25.html
+v17 %>% 
+  filter(str_detect(tolower(name), '02001_')) %>% 
+  filter(between(row_number(), 2, 8)) %>%
+  distinct(name, label) -> census_race
+
+census_race_raw <- census_race %>% 
+  crossing(year = seq(2011, 2017, by = 1)) %>% 
+  mutate(data = map2(year, name, ~SafeGetCensusData(.year = .x, series = .y)))
+
+census_race_clean <- census_race_raw %>% 
+  mutate(data = map(data, ~SafeFilterZip(.x, GEOID))) %>% 
+  filter(map_int(data, length) > 1) %>% 
+  unnest(data)
+
+# https://datalab.h-gac.com/reference/censusacs2017/zip_75852/table_list_1.html
+v17 %>% 
+  # filter(str_detect(tolower(concept), 'race$')) %>% 
+  filter(str_detect(tolower(name), '01001_(002|026)')) %>% 
+  # distinct(name, label) %>%  View()
+  # filter(between(row_number(), 2, 8)) %>% 
+  distinct(name, label) -> census_sex_age
+
+census_sex_age_raw <- census_sex_age %>% 
+  crossing(year = seq(2011, 2017, by = 1)) %>% 
+  mutate(data = map2(year, name, ~SafeGetCensusData(.year = .x, series = .y)))
+
+FilterZip(census_sex_age_raw$data[[1]], GEOID)
+
+census_sex_age_clean <- census_sex_age_raw %>% 
+  mutate(data = map(data, ~SafeFilterZip(.x, GEOID))) %>% 
+  filter(map_int(data, length) > 1) %>% 
+  unnest(data)
+
+# https://datalab.h-gac.com/reference/censusacs2017/zip_75852/table_list_4.html
+v17 %>% 
+  # filter(str_detect(tolower(concept), 'race$')) %>% 
+  filter(str_detect(tolower(name), '2801[01]_')) %>% 
+  filter(str_detect(tolower(name), '(11_00[18])|(10_00[17])')) %>% 
+  # distinct(name, label) %>%  View()
+  # filter(between(row_number(), 2, 8)) %>% 
+  distinct(name, label) -> census_internet
+
+census_internet_raw <- census_internet %>% 
+  crossing(year = seq(2011, 2017, by = 1)) %>% 
+  mutate(data = map2(year, name, ~SafeGetCensusData(.year = .x, series = .y)))
+
+census_internet_clean <- census_internet_raw %>% 
+  mutate(data = map(data, ~SafeFilterZip(.x, GEOID))) %>% 
+  filter(map_int(data, length) > 1) %>% 
+  unnest(data)
+
+# https://datalab.h-gac.com/reference/censusacs2017/zip_75852/table_list_6.html
+v17 %>% 
+  # filter(str_detect(tolower(concept), 'race$')) %>% 
+  filter(str_detect(tolower(name), '20002_(002|003)')) %>% 
+  # distinct(name, label) %>%  View()
+  # filter(between(row_number(), 2, 8)) %>% 
+  distinct(name, label) -> census_sex_earning
+
+census_sex_earning_raw <- census_sex_earning %>% 
+  crossing(year = seq(2011, 2017, by = 1)) %>% 
+  mutate(data = map2(year, name, ~SafeGetCensusData(.year = .x, series = .y)))
+
+census_sex_earning_clean <- census_sex_earning_raw %>% 
+  mutate(data = map(data, ~SafeFilterZip(.x, GEOID))) %>% 
+  filter(map_int(data, length) > 1) %>% 
+  unnest(data)
+
+# https://datalab.h-gac.com/reference/censusacs2017/zip_75852/table_list_7.html
+v17 %>% 
+  # filter(str_detect(tolower(concept), 'race$')) %>% 
+  filter(str_detect(tolower(name), '15003_')) %>% 
+  # distinct(name, label) %>%  View()
+  filter(between(row_number(), 16, 25)) %>%
+  distinct(name, label) -> census_edu
+
+census_edu_raw <- census_edu %>% 
+  crossing(year = seq(2011, 2017, by = 1)) %>% 
+  mutate(data = map2(year, name, ~SafeGetCensusData(.year = .x, series = .y)))
+
+census_edu_clean <- census_edu_raw %>% 
+  mutate(data = map(data, ~SafeFilterZip(.x, GEOID))) %>% 
+  filter(map_int(data, length) > 1) %>% 
+  unnest(data)
+
+# https://datalab.h-gac.com/reference/censusacs2017/zip_75852/table_list_8.html
+v17 %>% 
+  # filter(str_detect(tolower(concept), 'race$')) %>% 
+  filter(str_detect(tolower(name), '23025_00[457]')) %>% 
+  # distinct(name, label) %>%  View()
+  # filter(between(row_number(), 16, 25)) %>%
+  distinct(name, label) -> census_emp
+
+census_emp_raw <- census_emp %>% 
+  crossing(year = seq(2011, 2017, by = 1)) %>% 
+  mutate(data = map2(year, name, ~SafeGetCensusData(.year = .x, series = .y)))
+
+census_emp_clean <- census_emp_raw %>% 
+  mutate(data = map(data, ~SafeFilterZip(.x, GEOID))) %>% 
+  filter(map_int(data, length) > 1) %>% 
+  unnest(data)
+
+# https://datalab.h-gac.com/reference/censusacs2017/zip_75852/table_list_15.html
+v17 %>% 
+  # filter(str_detect(tolower(concept), 'race$')) %>% 
+  filter(str_detect(tolower(name), '11016_')) %>% 
+  filter(str_detect(tolower(name), '(_00[1-59])') |
+           str_detect(tolower(name), '(_01[0-3])')) %>% 
+  # distinct(name, label) %>%  View()
+  # filter(between(row_number(), 16, 25)) %>%
+  distinct(name, label) -> census_house_size
+
+census_house_size_raw <- census_house_size %>% 
+  crossing(year = seq(2011, 2017, by = 1)) %>% 
+  mutate(data = map2(year, name, ~SafeGetCensusData(.year = .x, series = .y)))
+
+census_house_size_clean <- census_house_size_raw %>% 
+  mutate(data = map(data, ~SafeFilterZip(.x, GEOID))) %>% 
+  filter(map_int(data, length) > 1) %>% 
+  unnest(data)
+
+# https://datalab.h-gac.com/reference/censusacs2017/zip_75852/table_list_18.html
+v17 %>% 
+  # filter(str_detect(tolower(concept), 'race$')) %>% 
+  filter(str_detect(tolower(name), '19083_')) %>% 
+  # distinct(name, label) %>%  View()
+  # filter(between(row_number(), 16, 25)) %>%
+  distinct(name, label) -> census_gini
+
+census_gini_raw <- census_gini %>% 
+  crossing(year = seq(2011, 2017, by = 1)) %>% 
+  mutate(data = map2(year, name, ~SafeGetCensusData(.year = .x, series = .y)))
+
+census_gini_clean <- census_gini_raw %>% 
+  mutate(data = map(data, ~SafeFilterZip(.x, GEOID))) %>% 
+  filter(map_int(data, length) > 1) %>% 
+  unnest(data)
+```
+
+```{r}
+merge_by_year <- merge_season %>% 
+  distinct(event_uid, .keep_all = TRUE) %>% 
+  add_count(zip, event_year, name = "num_event") %>%
+  mutate(season = as_factor(season),
+         season = fct_relevel(season, c("spring", "summer", "fall", "winter")),
+         season_num = as.numeric(season)) %>% 
+  select(zip, event_mth, event_year, event_wday, num_event, season_num) %>% 
+  pivot_longer(cols = -c(zip, event_year, num_event)) %>%
+  group_by_all() %>%
+  count() %>%
+  ungroup() %>% 
+  pivot_wider(
+    id_cols = c(zip, event_year, num_event),
+    names_from = c(name, value),
+    values_from = n,
+    values_fill = list(n = 0)
+  )
+
+census_data_drop <- census_data_ls %>% 
+  filter(is.na(estimate)) %>% 
+  distinct(label)
+
+merge_by_year_census <- merge_by_year %>% 
+  filter(zip != "NULL") %>% 
+  mutate(zip = as.character(zip)) %>% 
+  left_join(
+    census_data_ls %>% 
+      bind_rows() %>% 
+      anti_join(census_data_drop) %>% 
+      mutate(var = str_replace_all(label, ' ', '_')) %>%
+      select(estimate, zip = GEOID, event_year = year, var) %>% 
+      pivot_wider(names_from = var,
+                  values_from = estimate)
+  ) %>% 
+  arrange(zip, event_year) %>% 
+  janitor::clean_names()
+
+census_drop_ls <- merge_by_year_census %>% 
+  inspectdf::inspect_na() %>% 
+  filter(pcnt != 0) %>% 
+  distinct(label = col_name) %>% 
+  pull
+```
+
+### Segmentation
+
+Due to high dimensionality of data, dimension reduction methods (e.g., [_kmeans_](https://en.wikipedia.org/wiki/K-means_clustering){target="_blank"} and [_PCA_](https://en.wikipedia.org/wiki/Principal_component_analysis){target="_blank"}) are applied, in order to get interpretable insights.
+
+```{r}
+
+merge_by_year_census_numeric <- merge_by_year_census %>% 
+  select(-census_drop_ls) %>% 
+  select(-c(zip, event_year))
+
+merge_by_year_census_scaled <- merge_by_year_census_numeric %>% 
+  scale()
+
+model_cluster <- kmeans(merge_by_year_census_scaled, 3)
+merge_by_year_census_scaled$cluste <- r <- model_cluster$cluster
+
+library(broom)
+
+set.seed(20191006)
+
+kclusts <- tibble(k = 1:9) %>%
+  mutate(
+    kclust = map(k, ~kmeans(merge_by_year_census_numeric, .x)),
+    tidied = map(kclust, tidy),
+    glanced = map(kclust, glance),
+    augmented = map(kclust, augment, merge_by_year_census_numeric)
+  )
+```
+
+It seems that three clusters yield optimal segregation.
+
+```{r}
+clusters <- kclusts %>%
+  unnest(tidied)
+
+assignments <- kclusts %>% 
+  unnest(augmented)
+
+clusterings <- kclusts %>%
+  unnest(glanced)
+```
+
+```{r}
+ggplot(clusterings, aes(k, tot.withinss)) +
+  geom_line() +
+  theme_minimal() +
+  labs(title = "Determining the Optimal Number of Clusters",
+       subtitle = "Three Clusters Seem to be Optimal") +
+  xlab("Number of Cluster(s)") +
+  ylab("Within Groups Sum of Squares")
+```
+
+From the plot below, it seems the clustering is performant, at least with respect to event count.
+
+Note that the clustering method is applied on a multi-dimensional basis.
+
+```{r}
+cluster_2018 <- assignments %>%
+  filter(k == 3) %>%
+  bind_cols(
+    merge_by_year_census %>%
+      select(zip, event_year)
+  ) %>%
+  filter(event_year == 2018)
+
+cluster_2018 %>%
+  ggplot(aes(x = zip, y = num_event, colour = .cluster)) +
+  geom_point() +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(title = "Data Clusters",
+       subtitle = "Analyzing Clusters on Event Count")
+  
+```
+
+### PCA
+
+Applying P(rincipal) C(omponent) A(nalysis) to data to extract most data characteristics without losing too much information.
+
+```{r}
+pca_output <- merge_by_year_census_numeric %>% 
+  prcomp(center = TRUE, scale = TRUE)
+
+pca_result <- pca_output %>% 
+  augment(data = merge_by_year_census_numeric)
+```
+
+It seems the first two component explains most of the variance, that is, characterize the data sufficiently.
+
+```{r}
+var_exp <- pca_result %>% 
+  summarize_at(.vars = vars(contains("PC")), list(var)) %>% 
+  gather(key = pc, value = variance) %>% 
+  mutate(var_exp = variance/sum(variance),
+         cum_var_exp = cumsum(var_exp),
+         pc = str_replace(pc, ".fitted", ""))
+
+var_exp %>% 
+  rename(
+    `Variance Explained` = var_exp,
+    `Cumulative Variance Explained` = cum_var_exp
+  ) %>% 
+  gather(key = key, value = value, `Variance Explained`:`Cumulative Variance Explained`) %>% 
+  ggplot(aes(pc, value, group = key)) + 
+  geom_point() + 
+  geom_line() + 
+  facet_wrap(~key, scales = "free_y") +
+  theme_bw() +
+  lims(y = c(0, 1)) +
+  labs(y = "Variance",
+       title = "Variance explained by each principal component") +
+  theme(axis.text.x = element_text(angle = 90))
+  
+```
+
+```{r, eval=FALSE}
+library(ggfortify)
+pca_output %>%
+  autoplot(
+    loadings = FALSE,
+    loadings.label = TRUE,
+    loadings.label.repel = TRUE,
+    data = merge_by_year_census_numeric,
+    label = TRUE,
+    # label.label = "zip",
+    label.repel = TRUE
+  ) +
+  theme_minimal() +
+  labs(x = "Principal Component 1",
+       y = "Principal Component 2",
+       title = "First Two Principal Components")
+```
+
+From a scatterplot of the first 2 components, 2 obvious clusters are seen.
+
+This insight may be used to increase collaboration among event hosts to improve attendance and logistics.
+
+```{r}
+pca_result %>% 
+  bind_cols(
+      merge_by_year_census %>% 
+      select(zip, event_year)
+  ) %>% 
+  # filter(event_year == 2018) %>% 
+  ggplot(aes(x = .fittedPC1, y = .fittedPC2, colour = zip)) +
+  geom_point() +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  xlab("Principal Component 1") +
+  ylab("Principal Component 2") +
+  labs(title = "First Two Principal Components")
+```
+
