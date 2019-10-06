@@ -9,7 +9,7 @@ library(data.table)
 dat <- fread('build/dat.csv')
 
 graph_dat <- dat %>% 
- filter(end_date > ymd('2019-01-01')) %>%
+ filter(end_date > ymd('2017-01-01')) %>%
  select(venue_uid, artist_uid) %>%
  group_by(venue_uid, artist_uid) %>%
  summarize(num_visits=n()) %>%
