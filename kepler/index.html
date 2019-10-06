@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8"/>
+        <title>Basic Web Page</title>
+         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+        <style>
+        	.description > p {
+        		color:gray;
+        	}
+        	body {
+        		background-color:black;
+        	}
+       		h1 {
+       			font-family: 'Ubuntu', sans-serif;
+       			margin-top:0.5em;
+       			margin-bottom:0.5em;
+				/*color: #09101E;*/
+				color:white;
+        	}
+        	.headline {
+				color:white;
+				font-family: 'Ubuntu', sans-serif;
+        	}
+        	h2 {font-family: 'Ubuntu', sans-serif;}
+        	h3 {font-family: 'Ubuntu', sans-serif;}
+        	h4 {font-family: 'Ubuntu', sans-serif;}
+        	p {
+        		font-family: 'Ubuntu', sans-serif;
+        	}
+        	.description {
+				color:gray;
+        	}
+        	
+			.wrapper {
+			  display: flex;
+			}
+			.wrapper > div {
+			  flex: 1;
+			}
+			.demo > div {
+			  font-size: 2vh;
+			  text-align: center;
+			  color: white;
+			  background: gray;
+			  margin: 0.5em;
+			  padding: .3em;
+			  border-radius: 3px;
+			  font-family: 'Ubuntu', sans-serif;
+
+			}
+			  .media {
+			    display: flex;
+			    align-items: flex-start;
+			    background: #F6F3EB;
+			    padding: 2em;
+			    border-radius: 3px;
+			    background-color:black;
+			   /* max-width: 24em;*/
+			  }
+			  .media-object {
+			    margin-left: 1em;
+			    order: 1;
+			  }
+			  .media-body {
+			    flex: 1;
+			  }
+			  .media-heading {
+			    margin: 0 0 .5em;
+			    color:gray;
+				}
+			  .description_header {
+	        		color:white;
+	        	}
+		</style>
+    </head>
+    <body>
+		<div class="wrapper">
+			<div style="text-align: center;">
+				<h1 style="font-size:7em;">Houston</h1>
+				<h1 class="headline">Art City    :   Science City</h1>
+			</div>
+		</div>
+	<!-- 	<div class="wrapper demo">
+		  <div>1</div>
+		</div>
+		<div class="wrapper demo">
+		  <div>1</div>
+		  <div>2</div>
+		</div>
+		<div class="wrapper demo">
+		  <div>1</div>
+		  <div>2</div>
+		  <div>3</div>
+		</div> -->
+		<div class="wrapper demo">
+		  <div>About the data</div>
+		  <div>Author</div>
+		  <div>Hackathon Organizer</div>
+		  <div>Tech Stack</div>
+		</div>
+		<div class="media">
+		  <iframe class="media-object" src="points_sciAndArt_save_v1.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="1100px" allowfullscreen></iframe>
+		  <div class="media-body">
+		    <h2 class="media-heading description_header" style="margin-bottom:2em;margin-top:1em">Spatial Distribution</h2>
+		     <h3 class="media-heading description">Hypothesis</h3>
+		    <p class="description">Something Something spatial distribution is what I thought I'd see.</p>
+		    <h3 class="media-heading description">Science Observations (left): </h3>
+		    <p class="description">Something Something spatial distribution is what I thought I'd see.</p>
+		    <h3 class="media-heading description">Art Observations (right): </h3>
+		    <p class="description">Something Something spatial distribution is what I thought I'd see.</p>
+		    <h3 class="media-heading description" style="margin-top:2em">What Questions Do These Observation Bring Up? </h3>
+		    <p class="description">Something Something spatial distribution is what I thought I'd see.</p>
+		  </div>
+		</div>
+		<div class="media">
+			<div class="media-body">
+			    <h3 class="media-heading description">Easier to see here the central concentration</h3>
+			    <p class="description">Something Something spatial distribution is more spread out in Science jobs and more concentrated with art positions.</p>
+		  	</div>
+		  <iframe src="hexagon_sciAndArt_save_v1.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="1100px" allowfullscreen></iframe>
+		  
+		</div>
+
+		<!-- <div class="wrapper">
+			<div style="min-width:100px">
+				<h3>Distribution</h3>
+				<p>And other content</p>
+			</div>
+			<div style="margin: auto;border:solid green;height:800px;width:1100px">
+				<iframe src="hexagon_sciAndArt_save_v1.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="1100px" allowfullscreen></iframe>
+			</div>
+		</div>
+		 -->
+
+
+
+
+		<!-- <div style="margin: auto;border:solid green;height:800px;width:1100px">
+			
+		</div> -->
+
+
+	</body>
+</html>
