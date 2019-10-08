@@ -15,5 +15,6 @@ Glasstire/ - Data from glasstire data hack event
 
 NADAC/ - Data from National Archive of Data on Arts and Culture
 
+Justin's scraped & google API generated dataset of locatins that advertise science-related jobs, which can also be found <a href="https://github.com/JustinGOSSES/HoustonScienceCity"here</a>:
 
 <img src="Screen Shot 2019-10-07 at 8.16.23 PM.png"/>
